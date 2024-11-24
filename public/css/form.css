@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/pic/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba(7, 65, 115, 1); /* Warna putih transparan */
+    /* backdrop-filter: blur(5px); Atur jumlah blur */
+}
+
+/* main {
+    background: #000;
+    justify-items: center;
+    margin-top: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+} */
+
+.positionlogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo1 {
+    margin-top: 20px;
+    max-width: 150px;
+}
+
+.logo2 {
+    justify-items: center;
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.table-container {
+    color: #fff;
+    background-color: rgba(7, 65, 115, 0.3); /* Warna putih transparan */
+    backdrop-filter: blur(10px); /* Atur jumlah blur */
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 450px;
+}
+
+.jdl {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    color: #fff;
+    background-color: rgba(7, 65, 115, 1); /* Warna putih transparan */
+    /* backdrop-filter: blur(5px); Atur jumlah blur */
+    text-decoration: none;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isijdl {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.formulir {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 340px;
+    overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+    overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+}
+
+.boxTextForm {
+    padding-top: 7px;
+    font-size: 25px;
+}
+
+.inputtext {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}  
+
+footer {
+    padding-top: 10px;
+    text-align: center;
+    padding-right: 50px;
+    margin: 10px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media screen and (max-aspect-ratio: 16/9) {
+    header {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .logo1 {
+        max-width: 100px; /* Reduce logo size */
+    }
+
+    .logo2 {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .table-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+        height: auto;
+    }
+
+    .jdl, .isijdl {
+        flex: 1 1 100%; /* Full width */
+    }
+
+    .formulir {
+        height: auto; /* Allow height to adjust */
+        overflow-y: hidden;
+    }
+
+    footer {
+        justify-content: center; /* Center footer */
+        padding-right: 0; /* Remove right padding */
+    }
+}

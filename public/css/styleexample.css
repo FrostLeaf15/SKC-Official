@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(/pic/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    position: relative; /* Untuk mengatur posisi elemen anak */
+    font-family: "Bebas Neue", sans-serif;
+    font-style: normal;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 20px;
+    color: #fff;
+    background-color: rgba(7, 65, 115, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-button {
+    position: absolute;
+    left: 10px; /* Jarak dari kiri */
+    top: 50%; /* Vertikal tengah */
+    transform: translateY(-50%); /* Sesuaikan agar vertikal tengah */
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Lato", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Warna saat dihover */
+    color: #000;
+}
+
+main {
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+.logo-ppdb {
+    display: flex; /* Gunakan Flexbox pada elemen induk */
+    justify-content: center; /* Pusatkan secara horizontal */
+    align-items: center; /* Pusatkan secara vertikal */
+    height: 100%; /* Pastikan elemen induk memiliki tinggi penuh */
+    padding-bottom: 10px;
+}
+
+.logo-ppdb img {
+    height: 100px; /* Tetap atur tinggi gambar */
+    max-width: 100%; /* Pastikan gambar tidak melampaui kontainer */
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.table-container {
+    color: #fff;
+    background-color: rgba(7, 65, 115, 0.3); /* Warna putih transparan */
+    backdrop-filter: blur(10px); /* Atur jumlah blur */
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    height: 450px;
+}
+
+.jdl {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+    color: #fff;
+    background-color: rgba(7, 65, 115, 1); /* Warna putih transparan */
+    /* backdrop-filter: blur(5px); Atur jumlah blur */
+    text-decoration: none;
+    margin: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+    flex: 1 1 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.isijdl {
+    text-decoration: none;
+    font-size: 24px;
+    margin: 10px;
+    border-radius: 10px;
+    flex: 1 1 30%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
+
+.list-jurusan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-top: 5%;
+    height: 250px;  
+}
+
+.daftar {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: rgba(7, 65, 115, 1); /* Warna putih transparan */
+}
+
+footer {
+    text-align: center;
+    margin: 10px;
+}
+
+img {
+    height: 200px;
+}
+
+@media screen and (max-aspect-ratio: 16/9) {
+    header {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .logo1 {
+        max-width: 100px; /* Reduce logo size */
+    }
+
+    .logo2 {
+        width: 80px; /* Reduce logo size */
+    }
+
+    .table-container {
+        grid-template-columns: 1fr; /* Single column layout on mobile */
+        height: auto;
+    }
+
+    .jdl, .isijdl {
+        flex: 1 1 100%; /* Full width */
+    }
+
+    .list-jurusan {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .list-jurusan a {
+        padding-top: 5%;
+    }
+
+    footer {
+        justify-content: center; /* Center footer */
+        padding-right: 0; /* Remove right padding */
+    }
+}
