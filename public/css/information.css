@@ -44,21 +44,28 @@ header {
 }
 
 main {
-    padding-top: 4%;
     padding-bottom: 4%;
 }
 
 .logo-ppdb {
-    display: flex; /* Gunakan Flexbox pada elemen induk */
+    display: grid; /* Gunakan Flexbox pada elemen induk */
     justify-content: center; /* Pusatkan secara horizontal */
     align-items: center; /* Pusatkan secara vertikal */
     height: 100%; /* Pastikan elemen induk memiliki tinggi penuh */
     padding-bottom: 10px;
+    padding-top: 20px;
+    color: #fff;
 }
 
 .logo-ppdb img {
     height: 100px; /* Tetap atur tinggi gambar */
     max-width: 100%; /* Pastikan gambar tidak melampaui kontainer */
+}
+
+.logo-ppdb p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
 a {
@@ -94,6 +101,7 @@ a {
     padding-bottom: 10px;
     border-radius: 10px;
     text-align: center;
+    text-transform: uppercase;
     flex: 1 1 30%;
     display: flex;
     align-items: center;
@@ -106,9 +114,7 @@ a {
     margin: 10px;
     border-radius: 10px;
     flex: 1 1 30%;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    text-transform: capitalize;
 }
 
 .list-jurusan {
@@ -120,6 +126,10 @@ a {
 }
 
 .daftar {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -132,9 +142,17 @@ a {
     background-color: rgba(7, 65, 115, 1); /* Warna putih transparan */
 }
 
-footer {
-    text-align: center;
-    margin: 10px;
+.daftar a {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+footer p {
+    height: 50px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
 }
 
 img {

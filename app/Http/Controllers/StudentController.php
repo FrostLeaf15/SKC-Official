@@ -39,4 +39,18 @@ class StudentController extends Controller
         // Kirim data ke view dashboard
         return view('dashboard', compact('students'));
     }
+
+    public function store(Request $request)
+    {
+        $request->validate([
+            'nik' => 'required|unique:students,nik', // Ganti 'users' dengan nama tabel yang sesuai
+            // 'name' => 'required|string|max:255',
+            // tambahkan validasi lainnya
+        ]);
+
+        // Simpan data jika validasi lolos
+        Student::create($request->all());
+
+        return redirect()->back()->with('success', 'Data berhasil disimpan!');
+    }
 }

@@ -19,7 +19,7 @@
 
     <footer>
         <p style="color: #fff">
-            &copy;SMK Kesehatan Cianjur
+            &copy; SMK Kesehatan Cianjur
         </p>
     </footer>
 

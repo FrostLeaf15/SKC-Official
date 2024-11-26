@@ -5,7 +5,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
 }
 
 .navigasi {
@@ -114,6 +113,14 @@ li:hover ul {
     transform: translate(-50%);
 }
 
+footer {
+    height: 50px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
+}
+
 @media screen and (max-aspect-ratio: 16/9) {
     .navigasi {
         font-size: 20px;
@@ -129,5 +136,10 @@ li:hover ul {
     
     .logo-jurusan img {
         height: 100px;
+    }
+
+    footer {
+        justify-content: center; /* Center footer */
+        padding-right: 0; /* Remove right padding */
     }
 }

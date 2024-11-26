@@ -61,7 +61,7 @@
                     </label>
                     <div class="radio">
                         <label><input type="radio" name="jurusan" value="Asisten Keperawatan"> Asisten Keperawatan </label><br>
-                        <label><input type="radio" name="jurusan" value="Farmasi"> Farmasi </label><br>
+                        <label><input type="radio" name="jurusan" value="Farmasi"> Farmasi Klinis dan Komunitas </label><br>
                         <label><input type="radio" name="jurusan" value="Teknologi Laboratorium Medik"> Teknologi Laboratorium Medik </label>
                     </div>
                 </div>

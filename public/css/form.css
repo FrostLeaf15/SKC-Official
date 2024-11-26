@@ -121,10 +121,11 @@ header {
 }  
 
 footer {
-    padding-top: 10px;
-    text-align: center;
-    padding-right: 50px;
-    margin: 10px;
+    height: 50px;
+    position: fixed;
+    margin-left: 50%;
+    transform: translate(-50%);
+    bottom: 0px;
 }
 
 input[type=number]::-webkit-outer-spin-button,
