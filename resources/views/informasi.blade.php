@@ -58,7 +58,7 @@
             </div>
         </div>
         <div class="daftar">
-            <a href="/ppdb">Daftar</a>
+            <a href="/ppdb">Daftar Sekarang</a>
         </div>
     </main>
 

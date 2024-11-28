@@ -105,6 +105,7 @@ header {
 .boxTextForm {
     padding-top: 7px;
     font-size: 25px;
+    margin-bottom: 1rem;
 }
 
 .inputtext {

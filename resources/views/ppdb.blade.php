@@ -36,19 +36,25 @@
                 <!-- Pilihan jurusan menggunakan radio button -->
                 <div class="boxTextForm">
                     <label for="jurusan">Jurusan ke-1 :</label>
-                    <div class="radio">
-                        <label><input type="radio" name="jurusan" value="Asisten Keperawatan" required> Asisten Keperawatan </label><br>
-                        <label><input type="radio" name="jurusan" value="Farmasi Klinis dan Komunitas"> Farmasi Klinis dan Komunitas </label><br>
-                        <label><input type="radio" name="jurusan" value="Teknologi Laboratorium Medik"> Teknologi Laboratorium Medik </label>
+                    <div class="form-group">
+                        <select name="jurusan" id="jurusan" required>
+                            <option disabled hidden selected>Pilih Jurusan</option>
+                            <option value="Asisten Keperawatan">Asisten Keperawatan</option>
+                            <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
+                            <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>
+                        </select>
                     </div>
                 </div>
 
                 <div class="boxTextForm">
                     <label for="jurusan">Jurusan ke-2 :</label>
-                    <div class="radio">
-                        <label><input type="radio" name="jurusan_2" value="Asisten Keperawatan" required> Asisten Keperawatan </label><br>
-                        <label><input type="radio" name="jurusan_2" value="Farmasi Klinis dan Komunitas"> Farmasi Klinis dan Komunitas </label><br>
-                        <label><input type="radio" name="jurusan_2" value="Teknologi Laboratorium Medik"> Teknologi Laboratorium Medik </label>
+                    <div class="form-group">
+                        <select name="jurusan" id="jurusan" required>
+                            <option disabled hidden selected>Pilih Jurusan</option>
+                            <option value="Asisten Keperawatan">Asisten Keperawatan</option>
+                            <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
+                            <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>
+                        </select>
                     </div>
                 </div>
 
@@ -79,12 +85,14 @@
                 <!-- Pilihan jenis kelamin -->
                 <div class="boxTextForm">
                     <label for="kelamin">Jenis Kelamin:</label><br>
-                    <div class="radio">
-                        <input type="radio" id="cowo" name="kelamin" value="Laki-laki">
-                        <label for="cowo">Laki-laki</label><br>
-                        <input type="radio" id="cewe" name="kelamin" value="Perempuan">
-                        <label for="cewe">Perempuan</label><br>
+                    <div class="form-group">
+                        <select name="kelamin" id="kelamin" required>
+                            <option disabled hidden selected>Pilih Jenis Kelamin</option>
+                            <option value="Laki-laki">Laki-laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
                     </div>
+                    
                 </div>
 
                 <!-- Input untuk sekolah asal -->

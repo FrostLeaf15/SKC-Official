@@ -133,7 +133,7 @@ a {
     padding: 10px;
     margin-bottom: 10px;
     box-sizing: border-box;
-    border-radius: 4px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -220,12 +220,12 @@ img {
         font-size: 30px; /* Smaller font size for mobile */
     }
 
-    .logo1 {
-        max-width: 100px; /* Reduce logo size */
+    .logo-ppdb img {
+        height: 60px;
     }
 
-    .logo2 {
-        width: 80px; /* Reduce logo size */
+    .logo-ppdb p {
+        font-size: 18px;
     }
 
     .table-container {
@@ -235,6 +235,11 @@ img {
 
     .jdl, .isijdl {
         flex: 1 1 100%; /* Full width */
+        font-size: 18px;
+    }
+
+    .isijdl {
+        font-size: 18px;
     }
 
     .list-jurusan {
@@ -242,8 +247,16 @@ img {
         height: auto;
     }
 
+    .list-jurusan img {
+        height: 80px;
+    }
+
     .list-jurusan a {
         padding-top: 5%;
+    }
+
+    .daftar a {
+        font-size: 20px;
     }
 
     footer {
