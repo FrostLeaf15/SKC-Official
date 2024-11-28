@@ -114,12 +114,71 @@ li:hover ul {
 }
 
 footer {
-    height: 50px;
-    position: fixed;
-    margin-left: 50%;
-    transform: translate(-50%);
-    bottom: 0px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 200px;
+    padding: 20px;
 }
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.footer-left h2 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-right p {
+    margin: 5px 0;
+}
+
+.footer-right a {
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 5px;
+    color: #4caf50;
+    text-decoration: none;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
 
 @media screen and (max-aspect-ratio: 16/9) {
     .navigasi {

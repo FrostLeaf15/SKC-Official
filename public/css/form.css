@@ -118,7 +118,15 @@ header {
     box-sizing: border-box;
     border: 1px solid #cccccc;
     border-radius: 4px;
-}  
+}
+
+.btnSimpan {
+    background-size: cover;
+    margin-left: 14px;
+    font-size: 14px;
+    min-width: auto;
+    text-align: center;
+}
 
 footer {
     height: 50px;

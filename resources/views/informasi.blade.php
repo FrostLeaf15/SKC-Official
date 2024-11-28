@@ -62,11 +62,7 @@
         </div>
     </main>
 
-    <footer>
-        <p style="color: #fff">
-            &copy; SMK Kesehatan Cianjur
-        </p>
-    </footer>
+    @include('layout.footer2')
 
     <script src="/js/script.js"></script>
     

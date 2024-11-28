@@ -17,6 +17,7 @@ class Student extends Model
     'nama',
     'nik',
     'jurusan',
+    'jurusan_2',
     'tempat_lahir',
     'tanggal_lahir',
     'alamat',
