@@ -9,6 +9,8 @@ body {
     background-attachment: fixed;
 }
 
+/* bagian header */
+
 header {
     font-family: "Bebas Neue", sans-serif;
     font-style: normal;
@@ -21,14 +23,7 @@ header {
     /* backdrop-filter: blur(5px); Atur jumlah blur */
 }
 
-/* main {
-    background: #000;
-    justify-items: center;
-    margin-top: 10px;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 10px;
-} */
+/* bagian logo */
 
 .positionlogo {
     display: flex;
@@ -47,6 +42,8 @@ header {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+/* bagian isi konten */
 
 .table-container {
     color: #fff;
@@ -93,6 +90,8 @@ header {
     justify-content: center; */
 }
 
+/* bagian formulir */
+
 .formulir {
     margin: 10px;
     padding: 10px;
@@ -108,6 +107,10 @@ header {
     margin-bottom: 1rem;
 }
 
+.boxTextForm label {
+    margin-bottom: 20px;
+}
+
 .inputtext {
     font-family: "Lato", sans-serif;
     font-weight: 400;
@@ -121,21 +124,35 @@ header {
     border-radius: 4px;
 }
 
+.isi-option {
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 100%;
+    padding: 10px;
+}
+
 .btnSimpan {
+    background-color: rgba(7, 65, 115, 1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 50%;
+    padding: 10px;
     background-size: cover;
-    margin-left: 14px;
-    font-size: 14px;
+    font-size: 20px;
     min-width: auto;
     text-align: center;
 }
 
-footer {
+/* bagian footer */
+
+/* footer {
     height: 50px;
     position: fixed;
     margin-left: 50%;
     transform: translate(-50%);
     bottom: 0px;
-}
+} */
 
 input[type=number]::-webkit-outer-spin-button,
 input[type=number]::-webkit-inner-spin-button {
@@ -169,6 +186,10 @@ input[type=number]::-webkit-inner-spin-button {
     .formulir {
         height: auto; /* Allow height to adjust */
         overflow-y: hidden;
+    }
+
+    .boxTextForm {
+        font-size: 20px;
     }
 
     footer {

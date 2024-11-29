@@ -15,7 +15,6 @@ class Student extends Model
     // Tentukan kolom yang bisa diisi
     protected $fillable = [
     'nama',
-    'nik',
     'jurusan',
     'jurusan_2',
     'tempat_lahir',
@@ -28,6 +27,7 @@ class Student extends Model
     'pkrjnAyah',
     'namaIbu',
     'pkrjnIbu',
-    'nmrkonfirmasi'
+    'nmrkonfirmasi',
+    'rekomendasi'
     ];  // Sesuaikan dengan kolom di tabel
 }

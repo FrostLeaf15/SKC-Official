@@ -17,7 +17,6 @@ class PendaftaranController extends Controller
         // Logika untuk menyimpan data yang diterima dari form
         $validatedData = $request->validate([
             'nama' => 'required|string|max:255',
-            'nik' => 'required|numeric|digits:16',
             'jurusan' => 'required|string|max:100',
             'tempat_lahir' => 'required|string|max:255',
             'tanggal_lahir' => 'required|date',  // Validasi tanggal

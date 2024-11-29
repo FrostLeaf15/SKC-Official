@@ -23,6 +23,7 @@ class StudentController extends Controller
             'nisn' => 'required|unique:students,nisn', // Ganti 'users' dengan nama tabel yang sesuai
             'jurusan' => 'required|string',
             'jurusan_2' => 'required|string',
+            'rekomendasi' => 'nullable|string|max:255',
             // 'name' => 'required|string|max:255',
             // tambahkan validasi lainnya
         ]);

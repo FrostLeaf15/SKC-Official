@@ -37,7 +37,7 @@
                 <div class="boxTextForm">
                     <label for="jurusan">Jurusan ke-1 :</label>
                     <div class="form-group">
-                        <select name="jurusan" id="jurusan" required>
+                        <select class="isi-option" name="jurusan" id="jurusan" required>
                             <option disabled hidden selected>Pilih Jurusan</option>
                             <option value="Asisten Keperawatan">Asisten Keperawatan</option>
                             <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
@@ -49,8 +49,8 @@
                 <div class="boxTextForm">
                     <label for="jurusan">Jurusan ke-2 :</label>
                     <div class="form-group">
-                        <select name="jurusan" id="jurusan" required>
-                            <option disabled hidden selected>Pilih Jurusan</option>
+                        <select class="isi-option" name="jurusan_2" id="jurusan_2" required>
+                            <option disabled hidden selected>--Pilih Jurusan--</option>
                             <option value="Asisten Keperawatan">Asisten Keperawatan</option>
                             <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
                             <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>
@@ -86,13 +86,12 @@
                 <div class="boxTextForm">
                     <label for="kelamin">Jenis Kelamin:</label><br>
                     <div class="form-group">
-                        <select name="kelamin" id="kelamin" required>
-                            <option disabled hidden selected>Pilih Jenis Kelamin</option>
+                        <select class="isi-option" name="kelamin" id="kelamin" required>
+                            <option disabled hidden selected>--Pilih Jenis Kelamin--</option>
                             <option value="Laki-laki">Laki-laki</option>
                             <option value="Perempuan">Perempuan</option>
                         </select>
                     </div>
-                    
                 </div>
 
                 <!-- Input untuk sekolah asal -->
@@ -126,8 +125,19 @@
                 </div>
 
                 <div class="boxTextForm">
-                    <label for="rekomendasi">Rekomendasi Daftar ke SMK Kesehatan Cianjur :</label>
-                    <input type="text" name="rekomendasi" id="rekomendasi" class="inputtext">
+                    <label for="rekomendasi">Pilih Rekomendasi :</label>
+                    <div class="form-group">
+                        <select class="isi-option" name="rekomendasi" id="rekomendasi" required>
+                            <option disabled hidden selected>--Pilih Rekomendasi--</option>
+                            <option value="Guru/Staf/Pegawai SMK Kesehatan Cianjur">Guru/Staf/Pegawai SMK Kesehatan Cianjur</option>
+                            <option value="Siswa/i SMK Kesehatan Cianjur">Siswa/i SMK Kesehatan Cianjur</option>
+                            <option value="Alumni SMK Kesehatan Cianjur">Alumni SMK Kesehatan Cianjur</option>
+                            <option value="Guru SMP/MTs">Guru SMP/MTs</option>
+                            <option value="Calon Siswa/i SMK Kesehatan Cianjur">Calon Siswa/i SMK Kesehatan Cianjur</option>
+                            <option value="Sosial Media">Sosial Media</option>
+                            <option value="Referensi Langsung">Referensi Langsung</option>
+                        </select>
+                    </div>
                 </div>
 
                 <!-- Tombol submit -->

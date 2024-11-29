@@ -32,6 +32,7 @@
                                 <th>Nama Ibu</th>
                                 <th>Pekerjaan Ibu</th>
                                 <th>Nomor yang dapat Dihubungi</th>
+                                <th>Rekomendasi</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -40,17 +41,18 @@
                                     <td>{{ $student->nama }}</td>
                                     <td>{{ $student->jurusan }}</td>
                                     <td>{{ $student->jurusan_2 }}</td>
+                                    <td>{{ $student->nisn }}</td>
                                     <td>{{ $student->tempat_lahir }}</td>
                                     <td>{{ $student->tanggal_lahir }}</td>
                                     <td>{{ $student->alamat }}</td>
                                     <td>{{ $student->kelamin }}</td>
-                                    <td>{{ $student->nisn }}</td>
                                     <td>{{ $student->sekolahAsal }}</td>
                                     <td>{{ $student->namaAyah }}</td>
                                     <td>{{ $student->pkrjnAyah }}</td>
                                     <td>{{ $student->namaIbu }}</td>
                                     <td>{{ $student->pkrjnIbu }}</td>
                                     <td>{{ $student->nmrkonfirmasi }}</td>
+                                    <td>{{ $student->rekomendasi }}</td>
                                 </tr>
                             @endforeach
                         </tbody>
