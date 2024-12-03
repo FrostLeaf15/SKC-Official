@@ -14,7 +14,7 @@
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="#" class="d-block">Alexander Pierce</a>
+                <a href="profile" class="d-block">{{ auth()->user()->name }}</a>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                 data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+                with font-awesome or any other icon font library -->
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -61,14 +61,8 @@
                         </p>
                     </a>
                 </li>
-            </ul>
+            </ul>        
         </nav>
-        @if(Auth::check())
-            <form method="POST" action="{{ route('logout') }}">
-                @csrf
-                <button type="submit" class="btn btn-danger">Logout</button>
-            </form>
-        @endif        
         <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
