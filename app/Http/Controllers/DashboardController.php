@@ -14,5 +14,10 @@ class DashboardController extends Controller
 
         // Kirim data ke view
         return view('dashboard', compact('students'));
+
+        // Controller
+        $items = App\Models\Item::paginate(10); // Contoh data dengan pagination
+        return view('dashboard', compact('items'));
+        
     }
 }
