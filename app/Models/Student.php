@@ -23,10 +23,7 @@ class Student extends Model
     'kelamin',
     'nisn',
     'sekolahAsal',
-    'namaAyah',
-    'pkrjnAyah',
-    'namaIbu',
-    'pkrjnIbu',
+    'nmorngtuawali',
     'nmrkonfirmasi',
     'rekomendasi'
     ];  // Sesuaikan dengan kolom di tabel

@@ -21,7 +21,7 @@
 
     <!-- Bagian formulir -->
     <div class="bagian-formulir">
-        <h1 class="jdl">FORMULIR</h1>
+        <h1 class="jdl">FORMULIR PENDAFTARAN</h1>
         <div class="formulir">
             <!-- Formulir pendaftaran -->
             <form class="form" name="formMurid" method="POST" action="{{ route('student.store') }}">
@@ -29,13 +29,13 @@
                 
                 <!-- Input untuk nama lengkap -->
                 <div class="boxTextForm">
-                    <label for="nama">Nama:</label><br>
+                    <label for="nama">Nama Lengkap :</label><br>
                     <input type="text" name="nama" id="nama" class="inputtext" required>
                 </div>
 
                 <!-- Pilihan jurusan menggunakan radio button -->
                 <div class="boxTextForm">
-                    <label for="jurusan">Jurusan ke-1 :</label>
+                    <label for="jurusan">Pilihan Jurusan ke-1 :</label>
                     <div class="form-group">
                         <select class="isi-option" name="jurusan" id="jurusan" required>
                             <option disabled hidden selected>Pilih Jurusan</option>
@@ -47,7 +47,8 @@
                 </div>
 
                 <div class="boxTextForm">
-                    <label for="jurusan">Jurusan ke-2 :</label>
+                    <label for="jurusan">Pilihan Jurusan ke-2 :</label>
+                    <p style="font-size: 15px"><i>pilihan ke-2 tidak boleh sama dengan pilihan ke-1</i></p>
                     <div class="form-group">
                         <select class="isi-option" name="jurusan_2" id="jurusan_2" required>
                             <option disabled hidden selected>--Pilih Jurusan--</option>
@@ -60,31 +61,31 @@
 
                 <!-- Input untuk tempat lahir -->
                 <div class="boxTextForm">
-                    <label for="tmptLahir">Tempat Lahir:</label><br>
+                    <label for="tmptLahir">Tempat Lahir :</label><br>
                     <input type="text" name="tempat_lahir" id="tmptLahir" class="inputtext">
                 </div>
 
                 <!-- Input untuk tanggal lahir -->
                 <div class="boxTextForm">
-                    <label for="tglLahir">Tanggal Lahir:</label><br>
+                    <label for="tglLahir">Tanggal Lahir :</label><br>
                     <input type="date" name="tanggal_lahir" id="tglLahir" class="inputtext">
                 </div>
 
                 <!-- Input untuk alamat lengkap -->
                 <div class="boxTextForm">
-                    <label for="almt">Alamat Lengkap:</label><br>
+                    <label for="almt">Alamat Lengkap :</label><br>
                     <textarea name="alamat" id="almt" cols="30" rows="5" class="inputtext"></textarea>
                 </div>
 
                 <!-- Input untuk NISN -->
                 <div class="boxTextForm">
-                    <label for="nisnSiswa">Nomor Induk Siswa Nasional (NISN):</label><br>
+                    <label for="nisnSiswa">Nomor Induk Siswa Nasional (NISN) :</label><br>
                     <input type="number" name="nisn" id="nisnSiswa" class="inputtext">
                 </div>
 
                 <!-- Pilihan jenis kelamin -->
                 <div class="boxTextForm">
-                    <label for="kelamin">Jenis Kelamin:</label><br>
+                    <label for="kelamin">Jenis Kelamin :</label><br>
                     <div class="form-group">
                         <select class="isi-option" name="kelamin" id="kelamin" required>
                             <option disabled hidden selected>--Pilih Jenis Kelamin--</option>
@@ -96,36 +97,24 @@
 
                 <!-- Input untuk sekolah asal -->
                 <div class="boxTextForm">
-                    <label for="SekolahAsal">Nama Sekolah Asal:</label><br>
+                    <label for="SekolahAsal">Nama Sekolah Asal :</label><br>
                     <input type="text" name="sekolahAsal" id="SekolahAsal" class="inputtext">
                 </div>
 
-                <!-- Input untuk data orang tua -->
+                <!-- Input untuk data orang tua atau wali -->
                 <div class="boxTextForm">
-                    <label for="namaAyah">Nama Lengkap Ayah:</label><br>
-                    <input type="text" name="namaAyah" id="namaAyah" class="inputtext">
-                </div>
-                <div class="boxTextForm">
-                    <label for="pkrjnAyah">Pekerjaan Ayah:</label><br>
-                    <input type="text" name="pkrjnAyah" id="pkrjnAyah" class="inputtext">
-                </div>
-                <div class="boxTextForm">
-                    <label for="namaIbu">Nama Lengkap Ibu:</label><br>
-                    <input type="text" name="namaIbu" id="namaIbu" class="inputtext">
-                </div>
-                <div class="boxTextForm">
-                    <label for="pkrjnIbu">Pekerjaan Ibu:</label><br>
-                    <input type="text" name="pkrjnIbu" id="pkrjnIbu" class="inputtext">
+                    <label for="nmorngtua/wali">Nama Orang Tua / Wali :</label><br>
+                    <input type="text" name="nmorngtuawali" id="nmorngtuawali" class="inputtext">
                 </div>
 
                 <!-- Input untuk nomor kontak -->
                 <div class="boxTextForm">
-                    <label for="nmrkonfirmasi">Nomor Kontak yang Bisa Dihubungi:</label><br>
+                    <label for="nmrkonfirmasi">Nomor HP / WA :</label><br>
                     <input type="text" maxlength="21" oninput="formatInput(this)" name="nmrkonfirmasi" id="nmrkonfirmasi" class="inputtext">
                 </div>
 
                 <div class="boxTextForm">
-                    <label for="rekomendasi">Pilih Rekomendasi :</label>
+                    <label for="rekomendasi">Rekomendasi Dari :</label>
                     <div class="form-group">
                         <select class="isi-option" name="rekomendasi" id="rekomendasi" required>
                             <option disabled hidden selected>--Pilih Rekomendasi--</option>
@@ -135,7 +124,7 @@
                             <option value="Guru SMP/MTs">Guru SMP/MTs</option>
                             <option value="Calon Siswa/i SMK Kesehatan Cianjur">Calon Siswa/i SMK Kesehatan Cianjur</option>
                             <option value="Sosial Media">Sosial Media</option>
-                            <option value="Referensi Langsung">Referensi Langsung</option>
+                            <option value="Referensi Langsung">Lain-Lain</option>
                         </select>
                     </div>
                 </div>

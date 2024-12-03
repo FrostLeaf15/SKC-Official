@@ -22,11 +22,9 @@ return new class extends Migration
             $table->text('alamat');
             $table->enum('kelamin', ['Laki-laki', 'Perempuan']);
             $table->string('sekolahAsal');
-            $table->string('namaAyah');
-            $table->string('pkrjnAyah');
-            $table->string('namaIbu');
-            $table->string('pkrjnIbu');
+            $table->string('nmorngtuawali');
             $table->string('nmrkonfirmasi');
+            $table->string('rekomendasi');
             $table->timestamps();
         });
     }

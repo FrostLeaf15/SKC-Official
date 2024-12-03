@@ -27,10 +27,7 @@
                                 <th>Alamat</th>
                                 <th>Jenis Kelamin</th>
                                 <th>Asal Sekolah</th>
-                                <th>Nama Ayah</th>
-                                <th>Pekerjaan Ayah</th>
-                                <th>Nama Ibu</th>
-                                <th>Pekerjaan Ibu</th>
+                                <th>Nama Orang Tua / Wali</th>
                                 <th>Nomor yang dapat Dihubungi</th>
                                 <th>Rekomendasi</th>
                             </tr>
@@ -47,10 +44,7 @@
                                     <td>{{ $student->alamat }}</td>
                                     <td>{{ $student->kelamin }}</td>
                                     <td>{{ $student->sekolahAsal }}</td>
-                                    <td>{{ $student->namaAyah }}</td>
-                                    <td>{{ $student->pkrjnAyah }}</td>
-                                    <td>{{ $student->namaIbu }}</td>
-                                    <td>{{ $student->pkrjnIbu }}</td>
+                                    <td>{{ $student->nmorngtuawali }}</td>
                                     <td>{{ $student->nmrkonfirmasi }}</td>
                                     <td>{{ $student->rekomendasi }}</td>
                                 </tr>

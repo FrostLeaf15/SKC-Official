@@ -23,7 +23,7 @@
         </div>
         <div class="table-container">
             <div class="bagian-persyaratan">
-                <h1 class="jdl">Persyaratan</h1>
+                <h1 class="jdl">Informasi PPDB</h1>
                 <div class="isijdl">
                     <ol>
                         <li>

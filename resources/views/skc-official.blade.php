@@ -18,7 +18,7 @@
                         <li><a href="#">Galeri</a></li>
                         <li><a href="#">Profile</a></li>
                         <li><a href="#">Event</a></li>
-                        <li><a href="/informasi">Formulir</a></li>
+                        <li><a href="https://ppdb.smkkesehatancianjur.sch.id">Formulir</a></li>
                     </ul>
                 </div>
             </nav>
