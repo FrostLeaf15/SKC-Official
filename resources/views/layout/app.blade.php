@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,17 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/al') }}l.min.css">
+    <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- DataTables -->
-    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap') }}4.min.css">
-    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap') }}4.min.css">
-    <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap') }}4.min.css">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlt') }}e.min.css">
 </head>
-<body class="sidebar-mini control-sidebar-slide-open sidebar-collapse layout-navbar-fixed dark-mode layout-fixed layout-footer-fixed">
+
+<body
+    class="sidebar-mini control-sidebar-slide-open sidebar-collapse layout-navbar-fixed dark-mode layout-fixed layout-footer-fixed">
     <div class="wrapper">
         <!-- Navbar -->
         @include('layout.navbar')
@@ -29,7 +32,6 @@
         <!-- Content -->
         <div class="content-wrapper">
             @yield('content')
-            @include('layout.table')
         </div>
         <!-- Footer -->
         @include('layout.footer')
@@ -73,4 +75,5 @@
         });
     </script>
 </body>
+
 </html>
