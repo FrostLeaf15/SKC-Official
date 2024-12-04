@@ -161,7 +161,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 /* Media Queries for Mobile Responsiveness */
-@media screen and (max-aspect-ratio: 16/9) {
+@media screen and (max-width: 768px) {
     header {
         font-size: 30px; /* Smaller font size for mobile */
     }

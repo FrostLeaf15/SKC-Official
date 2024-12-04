@@ -1,7 +1,7 @@
 @extends('layout.form') 
 @section('main')
 
-<div>
+{{-- <div>
     <!-- Bagian untuk menampilkan logo utama -->
     <div class="positionlogo">
         <img class="logo1" src="/pic/LOGO_SKC.png" alt="Logo SKC">
@@ -14,7 +14,7 @@
         <img class="logo2" src="/pic/LOGO_TLM.png" alt="Logo Teknologi Laboratorium Medik">
     </div>
     <br>
-</div>
+</div> --}}
 
 <!-- Container untuk formulir dan (opsional) persyaratan -->
 <div class="table-container">

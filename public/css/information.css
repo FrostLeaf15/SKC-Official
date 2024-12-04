@@ -79,11 +79,66 @@ a {
     border-radius: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 20px;
+    gap: 5px;
     padding: 10px;
     margin: 10px;
-    height: 450px;
+    height: auto;
+}
+
+.jurusan { grid-column: span 2 / span 1; }
+
+/* bagian formulir */
+
+.formulir {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    height: 340px;
+    overflow-y: scroll; /* Mengaktifkan scroll vertikal */
+    overflow-x: hidden; /* Menyembunyikan scroll horizontal */
+}
+
+.boxTextForm {
+    padding-top: 7px;
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+
+.boxTextForm label {
+    margin-bottom: 20px;
+}
+
+.inputtext {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.isi-option {
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 100%;
+    padding: 10px;
+}
+
+.btnSimpan {
+    background-color: rgba(7, 65, 115, 1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 50%;
+    padding: 10px;
+    background-size: cover;
+    font-size: 20px;
+    min-width: auto;
+    text-align: center;
 }
 
 .jdl {
@@ -177,7 +232,71 @@ img {
     height: 200px;
 }
 
-@media screen and (max-aspect-ratio: 16/9) {
+@media screen and (max-width: 1024px) {
+    header {
+        font-size: 30px; /* Smaller font size for mobile */
+    }
+
+    .logo-ppdb img {
+        height: 60px;
+    }
+
+    .logo-ppdb p {
+        font-size: 18px;
+    }
+
+    .table-container {
+        grid-template-columns: 1fr; /* Ubah menjadi satu kolom */
+        gap: 10px; /* Tambahkan jarak antar elemen */
+        padding: 15px; /* Sesuaikan padding */
+    }
+
+    .formulir {
+        height: auto; /* Allow height to adjust */
+        overflow-y: hidden;
+    }
+
+    .bagian-persyaratan {
+        height: 400px;
+    }
+
+    .jurusan {
+        grid-column: span 1 / span 1; /* Membentang penuh pada satu kolom */
+    }
+
+    .jdl, .isijdl {
+        flex: 1 1 100%; /* Full width */
+        font-size: 18px;
+    }
+
+    .isijdl {
+        font-size: 18px;
+    }
+
+    .list-jurusan {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: auto;
+    }
+
+    .list-jurusan img {
+        height: 150px;
+    }
+
+    .list-jurusan a {
+        padding-top: 5%;
+    }
+
+    .daftar a {
+        font-size: 20px;
+    }
+
+    footer {
+        justify-content: center; /* Center footer */
+        padding-right: 0; /* Remove right padding */
+    }
+}
+
+@media screen and (max-width: 768px) {
     header {
         font-size: 30px; /* Smaller font size for mobile */
     }
@@ -210,7 +329,7 @@ img {
     }
 
     .list-jurusan img {
-        height: 80px;
+        height: 130px;
     }
 
     .list-jurusan a {
