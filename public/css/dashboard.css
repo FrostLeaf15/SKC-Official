@@ -1,5 +1,0 @@
-.table-container {
-    width: 100%;
-    overflow-y: hidden; /* Mengaktifkan scroll vertikal */
-    overflow-x: scroll; /* Menyembunyikan scroll horizontal */
-}

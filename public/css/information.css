@@ -78,14 +78,16 @@ a {
     backdrop-filter: blur(10px); /* Atur jumlah blur */
     border-radius: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 5px;
     padding: 10px;
     margin: 10px;
     height: auto;
 }
 
-.jurusan { grid-column: span 2 / span 1; }
+.bagian-formulir {
+    grid-column: span 2 / span 2;
+}
 
 /* bagian formulir */
 
@@ -162,13 +164,21 @@ a {
     justify-content: center;
 }
 
-.isijdl {
+/* .isijdl {
     text-decoration: none;
     font-size: 24px;
     margin: 10px;
     border-radius: 10px;
     flex: 1 1 30%;
     text-transform: capitalize;
+} */
+
+.isijdl {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-top: 5%;
+    height: 250px; 
 }
 
 .list-jurusan {
@@ -256,11 +266,7 @@ img {
         overflow-y: hidden;
     }
 
-    .bagian-persyaratan {
-        height: 400px;
-    }
-
-    .jurusan {
+    .bagian-formulir {
         grid-column: span 1 / span 1; /* Membentang penuh pada satu kolom */
     }
 

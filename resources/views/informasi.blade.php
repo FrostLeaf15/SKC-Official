@@ -22,8 +22,8 @@
             <p>Penerimaan Peserta Didik Baru</p>
         </div>
         <div class="table-container">
-            <div class="bag-formulir">
-                <h1 class="jdl">Formulir</h1>
+            <div class="bagian-formulir">
+                <h1 class="jdl">Formulir Pendaftaran</h1>
                 <div class="formulir">
                     <!-- Formulir pendaftaran -->
                     <form class="form" name="formMurid" method="POST" action="{{ route('student.store') }}">
@@ -141,21 +141,9 @@
             <div class="bagian-persyaratan">
                 <h1 class="jdl">Informasi PPDB</h1>
                 <div class="isijdl">
-                    <ol>
-                        <li>
-                            <p>Melampirkan :</p>
-                            <ul>
-                                <li>Fotocopi Ijazah SMP/MTs</li>
-                                <li>Fotokopi Kartu Keluarga</li>
-                                <li>Fotokopi KTP Orang Tua</li>
-                                <li>Fotokopi Akta Kelahiran</li>
-                                <li>Fotokpi Kartu Indonesia Pintar (KIP) <i>Jika Ada</i></li>
-                                <li>Surat Keterangan Baik (SKB) Dari Sekolah Asal SMP/MTs</li>
-                                <li>Foto 2x3 Background Biru</li>
-                            </ul>
-                        </li>
-                        <li><p>Membayar Biaya Psikotes dan Mengikuti Psikotes</p></li>
-                    </ol>
+                    <a href="https://bit.ly/BrosurPPDBSKC-25">
+                        <img src="pic/Brosur_PPDB.png" alt="Brosur PPDB">
+                    </a>
                 </div>
             </div>
             <div class="jurusan">

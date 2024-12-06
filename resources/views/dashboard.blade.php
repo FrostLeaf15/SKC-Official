@@ -28,6 +28,7 @@
                                         <th>Nama Orang Tua / Wali</th>
                                         <th>Nomor HP/WA</th>
                                         <th>Rekomendasi</th>
+                                        <th>Waktu Daftar</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -46,6 +47,7 @@
                                             <td>{{ $student->nmorngtuawali }}</td>
                                             <td>{{ $student->nmrkonfirmasi }}</td>
                                             <td>{{ $student->rekomendasi }}</td>
+                                            <td>{{ $student->created_at }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
