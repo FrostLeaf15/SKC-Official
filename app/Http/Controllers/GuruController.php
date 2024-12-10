@@ -17,7 +17,7 @@ class GuruController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|string|max:255',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'photo' => 'nullable|image|file|max:2048',
         ]);
 
         $path = null;

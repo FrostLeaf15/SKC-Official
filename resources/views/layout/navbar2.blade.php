@@ -2,10 +2,7 @@
     <div class="container-fluid">
         <!-- Logo dan Nama -->
         <div class="d-flex align-items-center">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-                <img src="/pic/LOGO_SKC.png" alt="Logo SKC" width="50" height="50" class="me-2">
-                <span>SMK Kesehatan Cianjur</span>
-            </a>
+            <img src="/pic/LOGO_SKC.png" alt="Logo SKC" width="50" height="50" class="me-2">
         </div>
 
         <!-- Button untuk Toggle Navbar (Responsif) -->
@@ -22,10 +19,10 @@
                     <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galery</a>
+                    <a class="nav-link" href="#">Galeri</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Profile</a>
+                    <a class="nav-link" href="#">Sejarah</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/informasi">Formulir</a>
@@ -43,10 +40,10 @@
             </ul>
 
             <!-- Search Form -->
-            <form class="d-flex me-2" role="search">
+            {{-- <form class="d-flex me-2" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            </form> --}}
         </div>
     </div>
 </nav>
