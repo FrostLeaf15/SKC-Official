@@ -4,6 +4,7 @@ use App\Http\Controllers\PendaftaranController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\GuruController;
 use Illuminate\Support\Facades\Route;
 
 // ** Route Halaman Utama **
@@ -30,19 +31,28 @@ Route::get('/ppdb', function () {
     return view('ppdb');
 });
 
-Route::get('/ppdb/asper', function () {
-    // Menampilkan halaman PPDB untuk program ASPER
-    return view('ppdb/asper');
+Route::get('/informasi/asper', function () {
+    // Menampilkan halaman Informasi untuk program ASPER
+    return view('informasi/asper', [
+        "namajurusan" => "Asisten Keperawatan",
+        "logo" => "LOGO_ASKEP.png"
+    ]);
 });
 
-Route::get('/ppdb/farmasi', function () {
-    // Menampilkan halaman PPDB untuk program Farmasi
-    return view('ppdb/farmasi');
+Route::get('/informasi/farmasi', function () {
+    // Menampilkan halaman Informasi untuk program Farmasi
+    return view('informasi/farmasi', [
+        "namajurusan" => "Farmasi",
+        "logo" => "LOGO_FARMASI.png"
+    ]);
 });
 
-Route::get('/ppdb/tlm', function () {
-    // Menampilkan halaman PPDB untuk program TLM (Teknologi Laboratorium Medik)
-    return view('ppdb/tlm');
+Route::get('/informasi/tlm', function () {
+    // Menampilkan halaman Informasi untuk program TLM (Teknologi Laboratorium Medik)
+    return view('informasi/tlm', [
+        "namajurusan" => "Teknologi Labroratorium Medik",
+        "logo" => "LOGO_TLM.png"
+    ]);
 });
 
 // ** Route Halaman Dashboard **
@@ -54,11 +64,23 @@ Route::get('/dashboard', function () {
 // Menghubungkan DashboardController dengan halaman dashboard
 Route::get('/dashboard', [StudentController::class, 'index'])->name('dashboard');
 
+// ** Route Halaman Dashboard **
+Route::get('/dashboard/profileguru', function () {
+    // Menampilkan halaman dashboard
+    return view('dashboard/profileguru');
+})->middleware(['auth', 'verified'])->name('dashboard/profileguru');
+
+// ** Route untuk Profile Guru **
+Route::get('/dashboard/guru', [GuruController::class, 'index'])->name('guru.index');
+Route::post('/dashboard/guru', [GuruController::class, 'store'])->name('guru.store');
+
 // ** Route Resource untuk Student **
 Route::resource('student', StudentController::class);
 
 // ** Route untuk Menyimpan Data Student (POST) **
 Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');
+
+Route::get('/payment', [StudentController::class, 'showPayment'])->name('payment.show');
 
 // ** Route untuk Manajemen Profil Pengguna **
 Route::middleware('auth')->group(function () {

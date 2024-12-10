@@ -31,6 +31,13 @@ class StudentController extends Controller
         // Simpan data jika validasi lolos
         Student::create($request->all());
 
-        return redirect()->back()->with('success', 'Data berhasil disimpan!');
+        // Redirect ke halaman pembayaran
+        return redirect()->route('payment.show')->with('success', 'Data berhasil dikirim. Lanjutkan ke pembayaran.');
+    }
+
+    // Menampilkan Halaman Pembayaran
+    public function showPayment()
+    {
+        return view('payment');
     }
 }
