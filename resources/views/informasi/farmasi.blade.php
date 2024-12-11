@@ -2,6 +2,5 @@
 
 @section('main')
     <h3>Kompetensi Keahlian</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quam eius repellat nulla doloremque consectetur veniam
-        aut tempore? Culpa, odit. Illum natus enim esse pariatur quibusdam eius alias, neque corrupti.</p>
+    <p>Farmasi merupakan kompetensi keahlian yang mempelajari segala hal tentang obat. Mulai daribahan kimia yang ada didalamnya, proses pembuatan obat, proses pengemasan obat, fungsi dan kegunaan obat, sampai cara distribusi dan pengelolaan stok obat.</p>
 @endsection

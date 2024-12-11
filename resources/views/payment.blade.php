@@ -40,18 +40,18 @@
                 <div class="col-sm-6 mb-3 mb-sm-0">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Narahubung</h5>
-                            <p>Nomor Kontak: <a href="https://wa.me/6283820992488">0838-2099-2488</a> (Maya) </p>
-                        </p>
+                            <h5 class="card-title">Contact Person</h5>
+                            <p>Nomor Kontak: <a style="text-decoration: none; color: #000;" href="https://wa.me/6283820992488">0838-2099-2488</a> (Maya) </p>
+                            <p>Nomor Kontak: <a style="text-decoration: none; color: #000;" href="https://wa.me/6285797577184">0857-9757-7184</a> (Yanti) </p>
+                        </div>
                     </div>
-                </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Narahubung</h5>
-                            <p>Nomor Kontak: <a href="https://wa.me/6285797577184">0857-9757-7184</a> (Yanti) </p>
-                            </p>
+                            <h5 class="card-title">Sekretariat PPDB</h5>
+                            <h5><b>Kampus SMK Kesehatan Cianjur</b></h5>
+                            <p>Jl. Pangeran Hiadayatullah No. 105, Sawah Gede, Cianjur, Cianjur, Jawa Barat 43212</p>
                         </div>
                     </div>
                 </div>

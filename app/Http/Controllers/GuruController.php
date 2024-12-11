@@ -10,14 +10,14 @@ class GuruController extends Controller
     public function index()
     {
         $gurus = Guru::all(); // Ambil semua data guru
-        return view('dashboard.profileguru', compact('gurus'));
+        return view('dashboard.profileguru', compact('gurus')); // Kirim data ke view
     }
 
     public function store(Request $request)
     {
         $validated = $request->validate([
             'nama' => 'required|string|max:255',
-            'photo' => 'nullable|image|file|max:2048',
+            'photo' => 'image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $path = null;

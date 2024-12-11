@@ -42,7 +42,7 @@
                             <label for="jurusan">Pilihan Jurusan ke-1 :</label>
                             <div class="form-group">
                                 <select class="isi-option" name="jurusan" id="jurusan" required>
-                                    <option disabled hidden selected>Pilih Jurusan</option>
+                                    <option disabled hidden selected>--Pilih Jurusan--</option>
                                     <option value="Asisten Keperawatan">Asisten Keperawatan</option>
                                     <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
                                     <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>

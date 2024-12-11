@@ -2,6 +2,5 @@
 
 @section('main')
     <h3>Kompetensi Keahlian</h3>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quam eius repellat nulla doloremque consectetur veniam
-        aut tempore? Culpa, odit. Illum natus enim esse pariatur quibusdam eius alias, neque corrupti.</p>
+    <p>Asisten Keperawatan merupakan suatu kompetensi keahlian yang menghasilkan tenaga ahli di bidang kesehatan dalam asistensi keperawatan yang terampil dan kompeten, khususnya pemenuhan kebutuhan dasar manusia merawat kesehatan mental dan fisik.</p>
 @endsection

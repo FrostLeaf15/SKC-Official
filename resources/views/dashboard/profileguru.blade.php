@@ -10,9 +10,9 @@
                 <input type="text" name="nama" id="nama" class="form-control" placeholder="Masukkan nama guru"
                     required>
             </div>
-            <div class="input-group mb-3">
-                <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
+            <div class="mb-3">
+                <label class="form-label" for="photo">Photo</label>
+                <input type="file" class="form-control" id="photo" name="photo">
             </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
@@ -33,8 +33,12 @@
                         <tr>
                             <td>{{ $loop->iteration }}</td>
                             <td>
-                                <img src="{{ asset($guru->photo_path) }}" alt="Foto Profil {{ $guru->nama }}"
-                                    width="150">
+                                @if ($guru->photo_path)
+                                    <img src="{{ asset('storage/' . $guru->photo_path) }}" alt="Foto {{ $guru->nama }}"
+                                        width="100">
+                                @else
+                                    <p>Foto tidak tersedia.</p>
+                                @endif
                             </td>
                             <td>{{ $guru->nama }}</td>
                         </tr>

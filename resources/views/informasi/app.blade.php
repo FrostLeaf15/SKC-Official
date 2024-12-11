@@ -22,6 +22,12 @@
         <header class="navigasi">
             @include('layout.navbar2')
         </header>
+        <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Informasi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">{{ $namajurusan }}</li>
+            </ol>
+        </div>
 
         {{-- Logo dan Nama Jurusan --}}
         <div class="logo-jurusan text-center">

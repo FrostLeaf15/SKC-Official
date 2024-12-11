@@ -42,7 +42,7 @@ Route::get('/informasi/asper', function () {
 Route::get('/informasi/farmasi', function () {
     // Menampilkan halaman Informasi untuk program Farmasi
     return view('informasi/farmasi', [
-        "namajurusan" => "Farmasi",
+        "namajurusan" => "Farmasi Klinis dan Komunitas",
         "logo" => "LOGO_FARMASI.png"
     ]);
 });
@@ -71,8 +71,8 @@ Route::get('/dashboard/profileguru', function () {
 })->middleware(['auth', 'verified'])->name('dashboard/profileguru');
 
 // ** Route untuk Profile Guru **
-Route::get('/dashboard/guru', [GuruController::class, 'index'])->name('guru.index');
-Route::post('/dashboard/guru', [GuruController::class, 'store'])->name('guru.store');
+Route::get('/dashboard/guru', [GuruController::class, 'index'])->name('guru.index'); // Tampilkan data
+Route::post('/dashboard/guru', [GuruController::class, 'store'])->name('guru.store'); // Simpan data
 
 // ** Route Resource untuk Student **
 Route::resource('student', StudentController::class);
