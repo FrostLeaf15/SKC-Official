@@ -12,10 +12,10 @@ class Guru extends Model
     // Kolom-kolom yang dapat diisi melalui mass assignment
     protected $fillable = [
         'nama',
-        'photo_path'
+        'photo_path',
+        'deskripsi'
     ];
 
     // Kolom timestamp
     public $timestamps = true;
 }
-

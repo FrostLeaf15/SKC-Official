@@ -17,17 +17,22 @@ class GuruController extends Controller
     {
         $validated = $request->validate([
             'nama' => 'required|string|max:255',
+            'deskripsi' => 'required|string',
             'photo' => 'image|mimes:jpeg,png,jpg|max:2048',
         ]);
 
         $path = null;
         if ($request->hasFile('photo')) {
             $path = $request->file('photo')->store('uploads', 'public');
+            if (!$path) {
+                return redirect()->back()->with('error', 'Gagal menyimpan file!');
+            }
         }
 
         Guru::create([
             'nama' => $validated['nama'],
             'photo_path' => $path,
+            'deskripsi' => $validated['deskripsi'],
         ]);
 
         return redirect()->route('guru.index')->with('success', 'Data Guru berhasil disimpan!');

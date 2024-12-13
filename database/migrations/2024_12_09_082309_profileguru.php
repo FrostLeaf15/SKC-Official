@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id(); // Kolom primary key (id)
             $table->string('nama'); // Kolom nama guru
             $table->string('photo_path')->nullable(); // Kolom path foto, nullable
+            $table->text('deskripsi')->nullable(); // Kolom deskripsi, nullable
             $table->timestamps(); // Kolom created_at dan updated_at
         });
     }

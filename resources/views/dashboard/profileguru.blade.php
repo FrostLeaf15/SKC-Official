@@ -14,6 +14,10 @@
                 <label class="form-label" for="photo">Photo</label>
                 <input type="file" class="form-control" id="photo" name="photo">
             </div>
+            <div class="mb-3">
+                <label for="deskripsi" class="form-label">Deskripsi</label>
+                <textarea name="deskripsi" id="deskripsi" class="form-control" placeholder="Deskripsi" required></textarea>
+            </div>
             <button type="submit" class="btn btn-primary">Simpan</button>
         </form>
 
@@ -26,6 +30,7 @@
                         <th>#</th>
                         <th>Foto</th>
                         <th>Nama</th>
+                        <th>Deskripsi</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -41,6 +46,7 @@
                                 @endif
                             </td>
                             <td>{{ $guru->nama }}</td>
+                            <td>{{ $guru->deskripsi }}</td>
                         </tr>
                     @endforeach
                 </tbody>

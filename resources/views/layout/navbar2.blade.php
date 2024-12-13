@@ -16,16 +16,16 @@
             <!-- Menu Tengah -->
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link active"  href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Galeri</a>
+                    <a class="nav-link active" href="#">Galeri</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Sejarah</a>
+                    <a class="nav-link active" href="#">Sejarah</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/informasi">Formulir</a>
+                    <a class="nav-link active" href="/informasi">Formulir PPDB</a>
                 </li>
                 {{-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"

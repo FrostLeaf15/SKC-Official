@@ -4,6 +4,21 @@
 
 @section('content')
 
+    <!-- Flash Message -->
+    {{-- @if (session('success'))
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session('success') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif
+
+    @if (session('error'))
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            {{ session('error') }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    @endif --}}
+
     <!-- Main content -->
     <section class="content">
         <div class="container-fluid">
@@ -29,6 +44,7 @@
                                         <th>Nomor HP/WA</th>
                                         <th>Rekomendasi</th>
                                         <th>Waktu Daftar</th>
+                                        <th></th> <!-- Tambahkan kolom aksi -->
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -48,6 +64,14 @@
                                             <td>{{ $student->nmrkonfirmasi }}</td>
                                             <td>{{ $student->rekomendasi }}</td>
                                             <td>{{ $student->created_at }}</td>
+                                            <td>
+                                                <!-- Tombol Hapus -->
+                                                <form action="{{ route('students.destroy', $student->id) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus data ini?');">
+                                                    @csrf
+                                                    @method('DELETE')
+                                                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                                </form>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>

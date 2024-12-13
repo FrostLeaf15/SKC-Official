@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="{{ asset('/pic/favicon.png') }}">
-    <link rel="stylesheet" href="css/skcofficialstyle.css">
+
+    {{-- Local Style --}}
+    <link rel="stylesheet" href="{{ asset('css/navbarstyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/skcofficialstyle.css') }}">
 
     {{-- style css bootstrap --}}
     <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">

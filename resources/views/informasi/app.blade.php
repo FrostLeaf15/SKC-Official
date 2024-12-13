@@ -10,10 +10,11 @@
     <link rel="icon" type="image/png" href="{{ asset('/pic/favicon.png') }}">
 
     {{-- local style --}}
-    <link rel="stylesheet" href="/css/informasijurusan.css">
+    <link rel="stylesheet" href="{{ asset('/css/informasijurusan.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/navbarstyle.css') }}">
 
     {{-- style css bootstrap --}}
-    <link href="{{ asset('dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <title>Informasi | {{ $namajurusan }}</title>
 </head>
 
@@ -24,7 +25,7 @@
         </header>
         <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Informasi</a></li>
+                <li class="breadcrumb-item">Informasi</li>
                 <li class="breadcrumb-item active" aria-current="page">{{ $namajurusan }}</li>
             </ol>
         </div>
@@ -47,7 +48,7 @@
     </div>
 
     {{-- script js bootstrap --}}
-    <script src="{{ asset('dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/dist/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
 </html>

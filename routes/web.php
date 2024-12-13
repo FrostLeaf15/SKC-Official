@@ -10,7 +10,9 @@ use Illuminate\Support\Facades\Route;
 // ** Route Halaman Utama **
 Route::get('/', function () {
     // Menampilkan halaman utama (skc-official.blade.php)
-    return view('skc-official');
+    return view('skc-official', [
+        "title" => "skc-official"
+    ]);
 });
 
 // ** Route Halaman Tentang (About) **
@@ -22,7 +24,9 @@ Route::get('/about', function () {
 // ** Route Halaman Informasi **
 Route::get('/informasi', function () {
     // Menampilkan halaman informasi
-    return view('informasi');
+    return view('informasi', [
+        "tittle" => "informasi"
+    ]);
 });
 
 // ** Route Halaman PPDB (Penerimaan Peserta Didik Baru) **
@@ -79,6 +83,11 @@ Route::resource('student', StudentController::class);
 
 // ** Route untuk Menyimpan Data Student (POST) **
 Route::post('/student/store', [StudentController::class, 'store'])->name('student.store');
+
+// ** Route untuk Menghapus Data Student **
+Route::get('/students', [StudentController::class, 'index'])->name('students.index');
+Route::delete('/students/{id}', [StudentController::class, 'destroy'])->name('students.destroy');
+
 
 Route::get('/payment', [StudentController::class, 'showPayment'])->name('payment.show');
 

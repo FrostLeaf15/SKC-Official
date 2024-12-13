@@ -35,6 +35,19 @@ class StudentController extends Controller
         return redirect()->route('payment.show')->with('success', 'Data berhasil dikirim. Lanjutkan ke pembayaran.');
     }
 
+    public function destroy($id)
+    {
+        // Cari data berdasarkan ID
+        $student = Student::findOrFail($id);
+
+        // Hapus data
+        $student->delete();
+
+        // Redirect kembali ke halaman dashboard dengan pesan sukses
+        return redirect()->route('students.index')->with('success', 'Data siswa berhasil dihapus.');
+    }
+
+
     // Menampilkan Halaman Pembayaran
     public function showPayment()
     {

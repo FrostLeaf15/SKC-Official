@@ -9,49 +9,17 @@ body {
     background-attachment: fixed;
 }
 
-header {
-    position: relative; /* Untuk mengatur posisi elemen anak */
+.navigasi {
     font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
     font-style: normal;
-    font-size: 50px;
-    text-align: center;
-    padding: 5px;
-    border-radius: 20px;
-    color: #fff;
-    background-color: rgba(7, 65, 115, 1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.back-button {
-    position: absolute;
-    left: 10px; /* Jarak dari kiri */
-    top: 50%; /* Vertikal tengah */
-    transform: translateY(-50%); /* Sesuaikan agar vertikal tengah */
-    font-size: 20px;
-    text-decoration: none;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-    font-family: "Lato", sans-serif;
-    transition: background-color 0.3s ease;
-}
-
-.back-button:hover {
-    background-color: rgba(255, 255, 255, 0.5); /* Warna saat dihover */
-    color: #000;
-}
-
-main {
-    padding-bottom: 4%;
+    font-size: 25px;
 }
 
 .logo-ppdb {
     display: grid; /* Gunakan Flexbox pada elemen induk */
     grid-template-columns: 1fr;
     justify-items: center;
-    height: 100%; /* Pastikan elemen induk memiliki tinggi penuh */
     padding-bottom: 10px;
     padding-top: 20px;
     color: #fff;
@@ -95,7 +63,7 @@ a {
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
-    height: 340px;
+    height: 500px;
     overflow-y: scroll; /* Mengaktifkan scroll vertikal */
     overflow-x: hidden; /* Menyembunyikan scroll horizontal */
 }
@@ -215,7 +183,7 @@ footer {
     background-color: #222;
     color: #fff;
     font-family: Arial, sans-serif;
-    margin-top: 10px;
+    margin-top: 50px;
     padding: 20px;
 }
 
@@ -246,7 +214,7 @@ footer {
     text-decoration: underline;
 }
 
-img {
+.bagian-persyaratan img, .jurusan img {
     height: 200px;
 }
 

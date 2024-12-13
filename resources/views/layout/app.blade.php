@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Dashboard')</title>
+    
     <!-- AdminLTE CSS -->
     <link rel="icon" type="image/png" href="{{ asset('/pic/dashboard.png') }}">
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
@@ -13,12 +15,15 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('plugins/fontawesome-free/css/all.min.css') }}">
+    
     <!-- DataTables -->
     <link rel="stylesheet" href="{{ asset('plugins/datatables-bs4/css/dataTables.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/datatables-responsive/css/responsive.bootstrap4.min.css') }}">
     <link rel="stylesheet" href="{{ asset('plugins/datatables-buttons/css/buttons.bootstrap4.min.css') }}">
+    
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('dist/css/adminlte.min.css') }}">
 
@@ -28,22 +33,31 @@
 
 <body
     class="sidebar-mini control-sidebar-slide-open sidebar-collapse layout-navbar-fixed dark-mode layout-fixed layout-footer-fixed">
+
     <div class="wrapper">
+
         <!-- Navbar -->
         @include('layout.navbar')
+
         <!-- Sidebar -->
         @include('layout.sidebar')
+
         <!-- Content -->
         <div class="content-wrapper">
+
             @yield('content')
+            
         </div>
+
         <!-- Footer -->
         @include('layout.footer')
     </div>
+
     <!-- Scripts -->
     <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
     <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
+
     <!-- DataTables  & Plugins -->
     <script src="{{ asset('plugins/datatables/jquery.dataTables.min.js') }}"></script>
     <script src="{{ asset('plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
@@ -78,6 +92,7 @@
             });
         });
     </script>
+
 </body>
 
 </html>

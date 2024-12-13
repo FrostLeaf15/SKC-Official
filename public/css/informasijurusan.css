@@ -34,3 +34,13 @@
     font-style: normal;
     font-size: 40px;
 }
+
+h3 {
+    text-align: center;
+}
+
+.profile-guru {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}

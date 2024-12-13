@@ -6,19 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" type="image/png" href="{{ asset('/pic/favicon.png') }}">
-    <link rel="stylesheet" href="/css/information.css">
+
+    {{-- link untuk css --}}
+    <link href="{{ asset('/dist/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('/css/navbarstyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/information.css') }}">
     <title>PPDB - SMK Kesehatan Cianjur</title>
 </head>
 
 <body>
-    <header>
-        {{-- <a href="/" class="back-button">
-            &#x2190; Home <!-- Ikon panah ke kiri -->
-        </a> --}}
-        SMK Kesehatan Cianjur
-    </header>
+    <div class="container-fluid">
+        <header class="navigasi">
+            @include('layout.navbar2')
+        </header>
 
-    <main>
         <div class="logo-ppdb">
             <img src="/pic/Logo_PPDB.png" alt="Logo PPDB">
             <p>Penerimaan Peserta Didik Baru</p>
@@ -44,8 +45,10 @@
                                 <select class="isi-option" name="jurusan" id="jurusan" required>
                                     <option disabled hidden selected>--Pilih Jurusan--</option>
                                     <option value="Asisten Keperawatan">Asisten Keperawatan</option>
-                                    <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
-                                    <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>
+                                    <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas
+                                    </option>
+                                    <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -57,8 +60,10 @@
                                 <select class="isi-option" name="jurusan_2" id="jurusan_2" required>
                                     <option disabled hidden selected>--Pilih Jurusan--</option>
                                     <option value="Asisten Keperawatan">Asisten Keperawatan</option>
-                                    <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas</option>
-                                    <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik</option>
+                                    <option value="Farmasi Klinis dan Komunitas">Farmasi Klinis dan Komunitas
+                                    </option>
+                                    <option value="Teknologi Laboratorium Medik">Teknologi Laboratorium Medik
+                                    </option>
                                 </select>
                             </div>
                         </div>
@@ -127,7 +132,8 @@
                                         Kesehatan Cianjur</option>
                                     <option value="Siswa/i SMK Kesehatan Cianjur">Siswa/i SMK Kesehatan Cianjur
                                     </option>
-                                    <option value="Alumni SMK Kesehatan Cianjur">Alumni SMK Kesehatan Cianjur</option>
+                                    <option value="Alumni SMK Kesehatan Cianjur">Alumni SMK Kesehatan Cianjur
+                                    </option>
                                     <option value="Guru SMP/MTs">Guru SMP/MTs</option>
                                     <option value="Calon Siswa/i SMK Kesehatan Cianjur">Calon Siswa/i SMK Kesehatan
                                         Cianjur</option>
@@ -155,13 +161,13 @@
             <div class="jurusan">
                 <h1 class="jdl">Informasi Jurusan</h1>
                 <div class="list-jurusan">
-                    <a href="#">
+                    <a href="/informasi/asper">
                         <img src="/pic/LOGO_ASKEP.png" alt="Logo Asisten Keperawatan">
                     </a>
-                    <a href="#">
+                    <a href="/informasi/farmasi">
                         <img src="/pic/LOGO_FARMASI.png" alt="Logo Farmasi">
                     </a>
-                    <a href="#">
+                    <a href="/informasi/tlm">
                         <img src="/pic/LOGO_TLM.png" alt="Logo Teknologi Laboratorium">
                     </a>
                 </div>
@@ -170,11 +176,13 @@
         {{-- <div class="daftar">
             <a href="/ppdb">Daftar Sekarang</a>
         </div> --}}
-    </main>
+        @include('layout.footer2')
+    </div>
 
-    @include('layout.footer2')
 
-    <script src="/js/script.js"></script>
+    {{-- script js bootstrap --}}
+    <script src="{{ asset('/dist/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('/js/script.js') }}"></script>
 
 </body>
 
