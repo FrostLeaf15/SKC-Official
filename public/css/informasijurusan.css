@@ -1,46 +1,164 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+/* body {
+    background-attachment: fixed;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/pic/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover
+} */
+
+.body {
+    background-color: rgb(225, 225, 225);
+}
+
+.container {
+    /* backdrop-filter: blur(10px); */
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* background-color: rgba(0, 0, 0, .25); */
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
+    border-radius: 25px;
+}
 
 .navigasi {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: Bebas Neue, sans-serif;
     font-size: 25px;
+    font-style: normal;
+    font-weight: 400
 }
 
 .logo-jurusan {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 30px;
-    padding-top: 40px;
+    padding-top: 40px
+}
+
+.logo img,
+.logo-jurusan {
+    align-items: center;
+    display: flex;
+    justify-content: center
 }
 
 .logo img {
-    width: 150px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-right: 20px;
     font-size: 16px;
+    height: 150px;
+    margin-right: 20px;
+    text-align: center;
+    width: 150px
 }
 
 .nama-jurusan {
-    font-family: "Oswald", sans-serif;
+    font-family: Oswald, sans-serif;
     font-optical-sizing: auto;
-    font-weight: 4000;
-    font-style: normal;
     font-size: 40px;
+    font-style: normal;
+    font-weight: 4000
 }
 
 h3 {
-    text-align: center;
+    text-align: center
 }
 
 .profile-guru {
+    display: flex;
+    gap: 20px;
+    justify-content: center
+}
+
+.profile-guru img {
+    max-height: 400px;
+    object-fit: cover
+}
+
+.seragam-sekolah {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center
+}
+
+.list-peluang .desktop-view {
+    display: grid;
+    font-size: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center
+}
+
+.list-peluang .mobile-view {
+    display: none
+}
+
+.custom-carousel {
+    margin: 0 auto;
+    max-width: 700px
+}
+
+.list-testimoni {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center
+}
+
+.list-testimoni img {
+    height: 200px;
+    margin: 0 auto;
+    object-fit: cover
+}
+
+.information {
+    background-color: #fff
+}
+
+footer {
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+    padding: 20px
+}
+
+.footer-right {
+    text-align: right
+}
+
+.footer-right p {
+    margin: 5px 0
+}
+
+.footer-right a {
+    color: #4caf50;
+    text-decoration: none
+}
+
+.footer-right a:hover {
+    text-decoration: underline
+}
+
+@media (max-width:768px) {
+
+    .profile-guru,
+    .seragam-sekolah {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 0 10px;
+        scroll-snap-type: x mandatory
+    }
+
+    .profile-guru .card,
+    .seragam-sekolah .card {
+        flex: 0 0 auto;
+        scroll-snap-align: center;
+        width: 80%
+    }
+
+    .list-peluang .mobile-view {
+        display: grid;
+        font-size: 22px;
+        justify-items: center
+    }
+
+    .list-peluang .desktop-view {
+        display: none
+    }
 }

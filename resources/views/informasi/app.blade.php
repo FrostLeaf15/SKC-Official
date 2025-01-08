@@ -19,36 +19,65 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid body">
         <header class="navigasi">
             @include('layout.navbar2')
         </header>
-        <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+        <div style="--bs-breadcrumb-divider: '>'; color: rgb(0, 0, 0);" aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item">Informasi</li>
                 <li class="breadcrumb-item active" aria-current="page">{{ $namajurusan }}</li>
             </ol>
         </div>
 
-        {{-- Logo dan Nama Jurusan --}}
-        <div class="logo-jurusan text-center">
-            <div class="logo">
-                <img src="/pic/{{ $logo }}" alt="{{ $namajurusan }}">
-            </div>
-            <div class="nama-jurusan">
-                <p class="nmjrsn">
-                    {{ $namajurusan }}
-                </p>
-            </div>
-        </div>
-
         <div class="container">
+            {{-- Logo dan Nama Jurusan --}}
+            <div class="logo-jurusan text-center">
+                <div class="logo">
+                    <img src="/pic/{{ $logo }}" alt="{{ $namajurusan }}">
+                </div>
+                <div class="nama-jurusan">
+                    <p class="nmjrsn">
+                        {{ $namajurusan }}
+                    </p>
+                </div>
+            </div>
             @yield('main')
         </div>
+
+        <!-- Tombol Go to Top -->
+        <button id="goToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle">
+            ↑
+        </button>
+
+        @include('layout.footer2')
     </div>
 
     {{-- script js bootstrap --}}
     <script src="{{ asset('/dist/js/bootstrap.bundle.min.js') }}"></script>
+
+    <script>
+        // Ambil tombol Go to Top
+        const goToTopBtn = document.getElementById('goToTopBtn');
+
+        // Fungsi untuk menampilkan tombol saat scroll ke bawah
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                goToTopBtn.style.display = 'block'; // Tampilkan tombol
+            } else {
+                goToTopBtn.style.display = 'none'; // Sembunyikan tombol
+            }
+        };
+
+        // Fungsi untuk menggulir ke atas saat tombol diklik
+        goToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0, // Scroll ke posisi 0 (atas)
+                behavior: 'smooth' // Efek gulir halus
+            });
+        });
+    </script>
+
 </body>
 
 </html>

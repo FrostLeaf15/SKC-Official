@@ -55,7 +55,7 @@
 
                         <div class="boxTextForm">
                             <label for="jurusan">Pilihan Jurusan ke-2 :</label>
-                            <p style="font-size: 15px"><i>pilihan ke-2 tidak boleh sama dengan pilihan ke-1</i></p>
+                            {{-- <p style="font-size: 15px"><i>pilihan ke-2 tidak boleh sama dengan pilihan ke-1</i></p> --}}
                             <div class="form-group">
                                 <select class="isi-option" name="jurusan_2" id="jurusan_2" required>
                                     <option disabled hidden selected>--Pilih Jurusan--</option>
@@ -161,7 +161,7 @@
             <div class="jurusan">
                 <h1 class="jdl">Informasi Jurusan</h1>
                 <div class="list-jurusan">
-                    <a href="/informasi/asper">
+                    <a href="/informasi/askep">
                         <img src="/pic/LOGO_ASKEP.png" alt="Logo Asisten Keperawatan">
                     </a>
                     <a href="/informasi/farmasi">
@@ -173,6 +173,13 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tombol Go to Top -->
+        <button id="goToTopBtn" class="btn btn-primary position-fixed bottom-0 end-0 m-3 rounded-circle">
+            ↑
+        </button>
+
+
         {{-- <div class="daftar">
             <a href="/ppdb">Daftar Sekarang</a>
         </div> --}}
@@ -183,6 +190,30 @@
     {{-- script js bootstrap --}}
     <script src="{{ asset('/dist/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ asset('/js/script.js') }}"></script>
+
+    {{-- Local Script --}}
+    <script>
+        // Ambil tombol Go to Top
+        const goToTopBtn = document.getElementById('goToTopBtn');
+
+        // Fungsi untuk menampilkan tombol saat scroll ke bawah
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                goToTopBtn.style.display = 'block'; // Tampilkan tombol
+            } else {
+                goToTopBtn.style.display = 'none'; // Sembunyikan tombol
+            }
+        };
+
+        // Fungsi untuk menggulir ke atas saat tombol diklik
+        goToTopBtn.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0, // Scroll ke posisi 0 (atas)
+                behavior: 'smooth' // Efek gulir halus
+            });
+        });
+    </script>
+    {{-- Local Script end --}}
 
 </body>
 

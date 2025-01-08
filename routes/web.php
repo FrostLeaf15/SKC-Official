@@ -35,11 +35,12 @@ Route::get('/ppdb', function () {
     return view('ppdb');
 });
 
-Route::get('/informasi/asper', function () {
+Route::get('/informasi/askep', function () {
     // Menampilkan halaman Informasi untuk program ASPER
-    return view('informasi/asper', [
+    return view('informasi/askep', [
         "namajurusan" => "Asisten Keperawatan",
-        "logo" => "LOGO_ASKEP.png"
+        "logo" => "LOGO_ASKEP.png",
+        "kompetensi" => "Asisten Keperawatan merupakan suatu kompetensi keahlian yang menghasilkan tenaga ahli di bidang kesehatan dalam asistensi keperawatan yang terampil dan kompeten, khususnya pemenuhan kebutuhan dasar manusia merawat kesehatan mental dan sik."
     ]);
 });
 
@@ -47,7 +48,8 @@ Route::get('/informasi/farmasi', function () {
     // Menampilkan halaman Informasi untuk program Farmasi
     return view('informasi/farmasi', [
         "namajurusan" => "Farmasi Klinis dan Komunitas",
-        "logo" => "LOGO_FARMASI.png"
+        "logo" => "LOGO_FARMASI.png",
+        "kompetensi" => "Farmasi merupakan kompetensi keahlian yang mempelajari segala hal tentang obat. Mulai dari bahan kimia yang ada didalamnya, proses pembuatan obat, proses pengemasan obat, fungsi dan kegunaan obat, sampai cara distribusi dan pengelolaan stok obat."
     ]);
 });
 
@@ -55,7 +57,8 @@ Route::get('/informasi/tlm', function () {
     // Menampilkan halaman Informasi untuk program TLM (Teknologi Laboratorium Medik)
     return view('informasi/tlm', [
         "namajurusan" => "Teknologi Labroratorium Medik",
-        "logo" => "LOGO_TLM.png"
+        "logo" => "LOGO_TLM.png",
+        "kompetensi" => "Teknologi Laboratorium Medik merupakan kompetensi keahlian yang akan berkecimpung di dunia kesehatan untuk melaksanakan pelayanan pemeriksaan, pengukuran, penetapan dan pengujian terhadap bahan yang berasal dari manusia untuk penentuan jenis penyakit dan penyebab penyakit. Keunggulan dari kompetensi keahlian Teknologi Laboratorium Medik yaitu dalam penyerapan lulusan. Lulusan Teknologi Laboratorium Medik SMK Kesehatan Cianjur akan sangat mudah mendapatkan pekerjaan, mengingat masih kurangnnya SDM dibidang Teknologi Laboratorium Medik/Analis Kesehatan."
     ]);
 });
 

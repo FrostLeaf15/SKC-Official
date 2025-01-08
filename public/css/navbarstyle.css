@@ -1,4 +1,4 @@
-ul {
+nav ul {
     border-radius: 20px;
     list-style-type: none;
     margin: 0;
@@ -7,11 +7,11 @@ ul {
     justify-content: center; /* Pusatkan elemen di tengah secara horizontal */
 }
 
-li {
+nav li {
     position: relative; /* Penting untuk dropdown */
 }
 
-li a {
+nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -19,12 +19,12 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+nav li a:hover {
     border-radius: 10px;
     background-color: rgba(7, 50, 80, 1);
 }
 
-li ul {
+nav li ul {
     display: none; /* Sembunyikan dropdown secara default */
     position: absolute; /* Letakkan dropdown di bawah parent */
     top: 100%; /* Dropdown muncul di bawah menu utama */
@@ -37,23 +37,23 @@ li ul {
     z-index: 1000; /* Pastikan dropdown berada di atas elemen lain */
 }
 
-li ul li {
+nav li ul li {
     width: 100%;
 }
 
-li ul li a {
+nav li ul li a {
     font-size: 20px;
     color: white;
     text-align: left; /* Sesuaikan teks dropdown */
 }
 
-li ul li a:hover {
+nav li ul li a:hover {
     font-size: 20px;
     border-radius: 20px;
     background-color: rgba(7, 50, 80, 1); /* Warna hover untuk dropdown */
 }
 
 /* Tampilkan dropdown saat di-hover */
-li:hover ul {
+nav li:hover ul {
     display: block; /* Dropdown muncul saat menu di-hover */
 }
