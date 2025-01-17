@@ -2,7 +2,9 @@
     <div class="container-fluid">
         <!-- Logo dan Nama -->
         <div class="d-flex align-items-center">
-            <img src="/pic/LOGO_SKC.png" alt="Logo SKC" width="50" height="50" class="me-2">
+            <a href="/">
+                <img src="/pic/LOGO_SKC.png" alt="Logo SKC" width="50" height="50" class="me-2">
+            </a>
         </div>
 
         <!-- Button untuk Toggle Navbar (Responsif) -->
@@ -19,7 +21,7 @@
                     <a class="nav-link active"  href="/">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Galeri</a>
+                    <a class="nav-link active" href="/galeri">Galeri</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Sejarah</a>

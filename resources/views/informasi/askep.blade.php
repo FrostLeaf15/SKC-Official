@@ -6,22 +6,22 @@
         <p>{{ $kompetensi }}</p>
     </div>
 
+    {{-- List Guru Kejuruan --}}
     <div class="guru pt-5">
         <h3 class="text-center">Guru Ahli</h3>
-        <!-- Tambahkan class untuk Bootstrap grid -->
         <div class="profile-guru pt-3">
-            <div class="card" style="width: 18rem;">
-                <img src="/pic/Guru/askep/guru_1.jpg" class="card-img-top" alt="Guru Askep">
-                <div class="card-body text-center">
-                    <p class="card-text" style="margin-bottom: 0px">Nama :</p>
-                    <p class="card-text"><b>Nurun Nisa Shofi, S.Kep., Ners</b></p>
-                </div>
-            </div>
             <div class="card" style="width: 18rem;">
                 <img src="/pic/Guru/askep/guru_2.jpg" class="card-img-top" alt="Guru Askep">
                 <div class="card-body text-center">
                     <p class="card-text" style="margin-bottom: 0px">Nama :</p>
                     <p class="card-text"><b>Yanti Indriyanti, S.Kep</b></p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="/pic/Guru/askep/guru_1.jpg" class="card-img-top" alt="Guru Askep">
+                <div class="card-body text-center">
+                    <p class="card-text" style="margin-bottom: 0px">Nama :</p>
+                    <p class="card-text"><b>Nurun Nisa Shofi, S.Kep., Ners</b></p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
@@ -40,10 +40,11 @@
             </div>
         </div>
     </div>
+    {{-- List Guru Kejuruan end --}}
 
+    {{-- List Seragam --}}
     <div class="seragam pt-5">
         <h3>Seragam</h3>
-        {{-- Card Group --}}
         <div class="seragam-sekolah pt-2">
             <div class="card" style="width: 18rem;">
                 <img src="/pic/seragam/seragam_1.jpg" class="card-img-top" alt="Guru Askep">
@@ -70,8 +71,8 @@
                 </div>
             </div>
         </div>
-        {{-- Card Group end --}}
     </div>
+    {{-- List Seragam end --}}
 
     {{-- List Peluang Lulusan --}}
     <div class="peluang-lulus pt-5">
@@ -126,13 +127,16 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/askep/kegiatan1.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/askep/kegiatan2.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/askep/kegiatan3.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -152,19 +156,20 @@
 
     {{-- Testimoni Alumni --}}
     <div class="testimoni">
-        <h3 class="mt-5">Testimoni Alumni</h3>
+        <h3 class="mt-5 mb-3">Testimoni Alumni</h3>
         <div class="list-testimoni">
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Judul</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
+                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
+                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
                         </div>
                     </div>
                 </div>
@@ -172,14 +177,15 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Judul</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
+                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
+                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
                         </div>
                     </div>
                 </div>
@@ -187,14 +193,15 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Judul</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
+                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
+                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
                         </div>
                     </div>
                 </div>
@@ -202,14 +209,15 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                            <h5 class="card-title">Judul</h5>
+                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
+                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
+                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
                         </div>
                     </div>
                 </div>

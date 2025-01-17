@@ -11,7 +11,7 @@
     <link href="{{ asset('/dist/css/bootstrap.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('/css/navbarstyle.css') }}">
     <link rel="stylesheet" href="{{ asset('/css/information.css') }}">
-    <title>PPDB - SMK Kesehatan Cianjur</title>
+    <title>SMK Kesehatan Cianjur | PPDB</title>
 </head>
 
 <body>

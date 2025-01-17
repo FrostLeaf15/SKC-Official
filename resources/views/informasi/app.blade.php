@@ -56,6 +56,10 @@
     {{-- script js bootstrap --}}
     <script src="{{ asset('/dist/js/bootstrap.bundle.min.js') }}"></script>
 
+    {{-- Script js --}}
+    <script src="{{ asset('js/script.js') }}"></script>
+
+    {{-- Local Script --}}
     <script>
         // Ambil tombol Go to Top
         const goToTopBtn = document.getElementById('goToTopBtn');

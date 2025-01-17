@@ -12,22 +12,22 @@
     <div class="guru pt-5">
         <h3 class="text-center">Guru Ahli</h3>
         <!-- Tambahkan class untuk Bootstrap grid -->
-        <div class="profile-guru pt-3">
-            <div class="card" style="width: 20rem;">
+        <div class="profile-guru-f pt-3">
+            <div class="card" style="width: 18rem;">
                 <img src="/pic/Guru/farmasi/guru1.jpg" class="card-img-top" alt="Guru Farmasi">
                 <div class="card-body text-center">
                     <p class="card-text" style="margin-bottom: 0px">Nama :</p>
                     <p class="card-text"><b>Anggi, S.Farm</b></p>
                 </div>
             </div>
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 18rem;">
                 <img src="/pic/Guru/farmasi/guru2.jpg" class="card-img-top" alt="Guru Farmasi">
                 <div class="card-body text-center">
                     <p class="card-text" style="margin-bottom: 0px">Nama :</p>
                     <p class="card-text"><b>apt. Dede Siska, S.Farm</b></p>
                 </div>
             </div>
-            <div class="card" style="width: 20rem;">
+            <div class="card" style="width: 18rem;">
                 <img src="/pic/Guru/farmasi/guru3.jpg" class="card-img-top" alt="Guru Farmasi">
                 <div class="card-body text-center">
                     <p class="card-text" style="margin-bottom: 0px">Nama :</p>
@@ -154,7 +154,38 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="/pic/Guru/alumni/alumni2.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Rosi Restianti</h5>
+                            <p class="card-text">bekerja di klinik azka zayyan … sebagai asisten apoteker… dipercaya juga
+                                sebagai kasir dan pendaftarn … bekerja langsung setelah lulus sekolah.</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="/pic/Guru/alumni/alumni1.jpg" class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Ira Sanjani</h5>
+                            <p class="card-text">bekerja di klinik Nova … stelah 1 bulan lulus sekolah langsung di terima
+                                di klinik nova … sebagai asisten apoteker… alhamdulilahh betah dan nyaman…</p>
+                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
@@ -170,39 +201,8 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">

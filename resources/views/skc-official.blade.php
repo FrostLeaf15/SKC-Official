@@ -53,6 +53,7 @@
     </div>
 
     {{-- script js bootstrap --}}
+    <script src="{{ asset('js/script.js') }}"></script>
     <script src="{{ asset('dist/js/bootstrap.bundle.min.js') }}"></script>
 </body>
 
