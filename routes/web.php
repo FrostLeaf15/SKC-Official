@@ -21,6 +21,11 @@ Route::get('/about', function () {
     return view('welcome');
 });
 
+Route::get('/galeri', function () {
+    // Menampilkan halaman utama (skc-official.blade.php)
+    return view('galeri');
+});
+
 // ** Route Halaman Informasi **
 Route::get('/informasi', function () {
     // Menampilkan halaman informasi

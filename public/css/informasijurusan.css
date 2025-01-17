@@ -1,21 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
-/* body {
-    background-attachment: fixed;
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(/pic/bg2.jpg);
-    background-repeat: no-repeat;
-    background-size: cover
-} */
-
 .body {
     background-color: rgb(225, 225, 225);
 }
 
 .container {
-    /* backdrop-filter: blur(10px); */
-    /* -webkit-backdrop-filter: blur(10px); */
-    /* background-color: rgba(0, 0, 0, .25); */
     background-color: #fff;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2);
     border-radius: 25px;
@@ -25,19 +15,19 @@
     font-family: Bebas Neue, sans-serif;
     font-size: 25px;
     font-style: normal;
-    font-weight: 400
+    font-weight: 400;
 }
 
 .logo-jurusan {
     margin-bottom: 30px;
-    padding-top: 40px
+    padding-top: 40px;
 }
 
 .logo img,
 .logo-jurusan {
     align-items: center;
     display: flex;
-    justify-content: center
+    justify-content: center;
 }
 
 .logo img {
@@ -45,7 +35,7 @@
     height: 150px;
     margin-right: 20px;
     text-align: center;
-    width: 150px
+    width: 150px;
 }
 
 .nama-jurusan {
@@ -53,60 +43,58 @@
     font-optical-sizing: auto;
     font-size: 40px;
     font-style: normal;
-    font-weight: 4000
+    font-weight: 4000;
 }
 
 h3 {
-    text-align: center
-}
-
-.profile-guru {
-    display: flex;
-    gap: 20px;
-    justify-content: center
+    text-align: center;
 }
 
 .profile-guru img {
     max-height: 400px;
-    object-fit: cover
+    object-fit: cover;
 }
 
+.profile-guru,
 .seragam-sekolah {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center
+    justify-items: center;
+}
+
+.profile-guru-f,
+.profile-guru-t {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
 }
 
 .list-peluang .desktop-view {
     display: grid;
     font-size: 25px;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center
+    justify-items: center;
 }
 
 .list-peluang .mobile-view {
-    display: none
+    display: none;
 }
 
 .custom-carousel {
     margin: 0 auto;
-    max-width: 700px
+    max-width: 700px;
 }
 
 .list-testimoni {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center
+    justify-items: center;
 }
 
 .list-testimoni img {
     height: 200px;
-    margin: 0 auto;
-    object-fit: cover
-}
-
-.information {
-    background-color: #fff
+    object-fit: cover;
+    margin-inline: auto;
 }
 
 footer {
@@ -114,24 +102,24 @@ footer {
     color: #fff;
     font-family: Arial, sans-serif;
     margin-top: 20px;
-    padding: 20px
+    padding: 20px;
 }
 
 .footer-right {
-    text-align: right
+    text-align: right;
 }
 
 .footer-right p {
-    margin: 5px 0
+    margin: 5px 0;
 }
 
 .footer-right a {
     color: #4caf50;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .footer-right a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 @media (max-width:768px) {
@@ -142,23 +130,28 @@ footer {
         gap: 10px;
         overflow-x: auto;
         padding: 0 10px;
-        scroll-snap-type: x mandatory
+        scroll-snap-type: x mandatory;
     }
 
     .profile-guru .card,
     .seragam-sekolah .card {
         flex: 0 0 auto;
-        scroll-snap-align: center;
-        width: 80%
+        scroll-snap-align: start;
+        width: 80%;
     }
 
     .list-peluang .mobile-view {
         display: grid;
         font-size: 22px;
-        justify-items: center
+        justify-items: center;
     }
 
     .list-peluang .desktop-view {
-        display: none
+        display: none;
+    }
+
+    .list-testimoni {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
