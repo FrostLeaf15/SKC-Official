@@ -95,6 +95,8 @@ h3 {
     height: 200px;
     object-fit: cover;
     margin-inline: auto;
+    display: block;
+    width: 100%;
 }
 
 footer {
@@ -123,7 +125,6 @@ footer {
 }
 
 @media (max-width:768px) {
-
     .profile-guru,
     .seragam-sekolah {
         display: flex;
@@ -153,5 +154,13 @@ footer {
     .list-testimoni {
         display: grid;
         grid-template-columns: 1fr;
+    }
+
+    .list-testimoni img {
+        width: 700px;
+    }
+
+    .list-testimoni h5.card-title {
+        text-align: center;
     }
 }

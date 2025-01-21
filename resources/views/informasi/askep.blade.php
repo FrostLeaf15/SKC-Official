@@ -128,15 +128,15 @@
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="/pic/kegiatan/askep/kegiatan1.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                     <div class="carousel-item">
                         <img src="/pic/kegiatan/askep/kegiatan2.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                     <div class="carousel-item">
                         <img src="/pic/kegiatan/askep/kegiatan3.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -161,12 +161,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
                                 blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
                             <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
@@ -177,12 +177,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
                                 blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
                             <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
@@ -193,12 +193,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
                                 blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
                             <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
@@ -209,12 +209,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
                                 blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
                             <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>

@@ -115,13 +115,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/pic/kegiatan/tlm/kegiatan.png" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan.png" class="d-block w-100" alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                     <div class="carousel-item">
-                        <img src="/pic/kegiatan/tlm/kegiatan2.jpg" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan2.jpg" class="d-block w-100" alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                     <div class="carousel-item">
-                        <img src="/pic/kegiatan/tlm/kegiatan3.jpg" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan3.jpg" class="d-block w-100" alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -146,11 +146,11 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta
                                 perspiciatis laborum iure eum amet ea atque, quae provident iusto.</p>
                         </div>
@@ -160,11 +160,11 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet,
                                 beatae et expedita odit blanditiis quae cum rem nihil. Esse!</p>
                         </div>
@@ -174,12 +174,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
                         </div>
@@ -189,12 +189,12 @@
             <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">(Nama)</h5>
                             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
                                 additional content. This content is a little bit longer.</p>
                         </div>
