@@ -123,13 +123,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/Kegiatan/farmasi/kegiatan1.JPG" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/Kegiatan/farmasi/kegiatan2.JPG" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="d-block w-100" alt="...">
+                        <img src="/pic/Kegiatan/farmasi/kegiatan3.JPG" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -151,70 +151,66 @@
     <div class="testimoni">
         <h3 class="mt-5">Testimoni Alumni</h3>
         <div class="list-testimoni">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-5 mt-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/pic/Guru/alumni/alumni2.jpg" class="img-fluid" alt="...">
+                        <img src="/pic/Guru/alumni/alumni2.jpg" class="img-fluid rounded" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Rosi Restianti</h5>
                             <p class="card-text">bekerja di klinik azka zayyan … sebagai asisten apoteker… dipercaya juga
                                 sebagai kasir dan pendaftarn … bekerja langsung setelah lulus sekolah.</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-5 mt-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="/pic/Guru/alumni/alumni1.jpg" class="img-fluid" alt="...">
+                        <img src="/pic/Guru/alumni/alumni1.jpg" class="img-fluid rounded" alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
                             <h5 class="card-title">Ira Sanjani</h5>
                             <p class="card-text">bekerja di klinik Nova … stelah 1 bulan lulus sekolah langsung di terima
                                 di klinik nova … sebagai asisten apoteker… alhamdulilahh betah dan nyaman…</p>
-                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            {{-- <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
+                            <h5 class="card-title">(Nama)</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ipsa
+                                laboriosam repudiandae, architecto error iusto libero numquam praesentium nostrum qui.</p>
                             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            </div> --}}
+            {{-- <div class="card mb-3" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded-start"
+                        <img src="https://dummyimage.com/500X500/000/fff.png" class="img-fluid rounded"
                             alt="...">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional
-                                content. This content is a little bit longer.</p>
+                            <h5 class="card-title">(Nama)</h5>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. A ipsa
+                                laboriosam repudiandae, architecto error iusto libero numquam praesentium nostrum qui.</p>
                             <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
     {{-- Testimoni Alumni end --}}

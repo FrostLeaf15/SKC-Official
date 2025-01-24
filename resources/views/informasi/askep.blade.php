@@ -47,25 +47,25 @@
         <h3>Seragam</h3>
         <div class="seragam-sekolah pt-2">
             <div class="card" style="width: 18rem;">
-                <img src="/pic/seragam/seragam_1.jpg" class="card-img-top" alt="Guru Askep">
+                <img src="/pic/seragam/seragam_1.JPG" class="card-img-top" alt="Seragam">
                 <div class="card-body text-center">
                     <p class="card-text"><b>Seragam A</b></p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/pic/seragam/seragam_2.jpg" class="card-img-top" alt="Guru Askep">
+                <img src="/pic/seragam/seragam_2.JPG" class="card-img-top" alt="Seragam">
                 <div class="card-body text-center">
                     <p class="card-text"><b>Seragam B</b></p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/pic/seragam/seragam_3.jpg" class="card-img-top" alt="Guru Askep">
+                <img src="/pic/seragam/seragam_3.JPG" class="card-img-top" alt="Seragam">
                 <div class="card-body text-center">
                     <p class="card-text"><b>Seragam C</b></p>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/pic/seragam/seragam_4.jpg" class="card-img-top" alt="Guru Askep">
+                <img src="/pic/seragam/seragam_4.JPG" class="card-img-top" alt="Seragam">
                 <div class="card-body text-center">
                     <p class="card-text"><b>Seragam D</b></p>
                 </div>
@@ -124,19 +124,55 @@
                         aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                         aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
+                        aria-label="Slide 5"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"
+                        aria-label="Slide 6"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"
+                        aria-label="Slide 7"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
+                        aria-label="Slide 8"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
+                        aria-label="Slide 9"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="/pic/kegiatan/askep/kegiatan1.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                     <div class="carousel-item">
                         <img src="/pic/kegiatan/askep/kegiatan2.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                     <div class="carousel-item">
                         <img src="/pic/kegiatan/askep/kegiatan3.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="...">
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan4.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan5.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan6.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan7.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan8.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/pic/kegiatan/askep/kegiatan9.jpg" class="d-block w-100 max-height-500"
+                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -158,66 +194,56 @@
     <div class="testimoni">
         <h3 class="mt-5 mb-3">Testimoni Alumni</h3>
         <div class="list-testimoni">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
-                            alt="...">
+                        <img src="/pic/Guru/alumni/alumniaskep1.jpg" class="img-fluid rounded" alt="Photo Alumni Askep">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
-                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
-                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
+                            <h5 class="card-title">Silvia Agustina</h5>
+                            <p class="card-text">Bekerja di Rumah Sakit umum daerah (RSUD) Sayang Cianjur</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
-                            alt="...">
+                        <img src="/pic/Guru/alumni/alumniaskep2.jpg" class="img-fluid rounded" alt="Photo Alumni Askep">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
-                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
-                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
+                            <h5 class="card-title">Siti Elsania Azzahra</h5>
+                            <p class="card-text">Melanjutkan Pendidikan : Alice International Collage (Jepang) <br> Bekerja
+                                : Kudou General Hospital (Jepang)</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
-                            alt="...">
+                        <img src="/pic/Guru/alumni/alumniaskep3.jpg" class="img-fluid rounded" alt="Photo Alumni Askep">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
-                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
-                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
+                            <h5 class="card-title">Riska Nur Aisyah</h5>
+                            <p class="card-text">Bekerja : Rumah Sakit Dr. Hafidz (RSDH) Cianjur</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/700X400/000/fff.png" class="img-fluid rounded-start"
-                            alt="...">
+                        <img src="/pic/Guru/alumni/alumniaskep4.jpg" class="img-fluid rounded" alt="Photo Alumni Askep">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Judul</h5>
-                            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum ducimus
-                                blanditiis dolorum eum quasi illo ea laboriosam eaque sunt rem.</p>
-                            <p class="card-text"><small class="text-body-secondary">(Tahun Lulus)</small></p>
+                            <h5 class="card-title">Siti Nurhasanah</h5>
+                            <p class="card-text">Bekerja : Yuryo rojin homu Yokkaichi Kita niji ishizumu kabushiki kaisha
+                                (Jepang)</p>
                         </div>
                     </div>
                 </div>
