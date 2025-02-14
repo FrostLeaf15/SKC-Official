@@ -5,7 +5,11 @@ use App\Http\Controllers\StudentController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GuruController;
+use App\Http\Controllers\StudentGel1Controller;
+use App\Models\Student;
+use App\Http\Controllers\GaleriController;
 use Illuminate\Support\Facades\Route;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 // ** Route Halaman Utama **
 Route::get('/', function () {
@@ -74,7 +78,7 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 // Menghubungkan DashboardController dengan halaman dashboard
-Route::get('/dashboard', [StudentController::class, 'index'])->name('dashboard');
+Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 
 // ** Route Halaman Dashboard **
 Route::get('/dashboard/profileguru', function () {
@@ -82,9 +86,20 @@ Route::get('/dashboard/profileguru', function () {
     return view('dashboard/profileguru');
 })->middleware(['auth', 'verified'])->name('dashboard/profileguru');
 
+Route::get('/dashboard/daftarsiswa', [StudentGel1Controller::class, 'index']);
+
 // ** Route untuk Profile Guru **
 Route::get('/dashboard/guru', [GuruController::class, 'index'])->name('guru.index'); // Tampilkan data
 Route::post('/dashboard/guru', [GuruController::class, 'store'])->name('guru.store'); // Simpan data
+
+Route::get('/dashboard/uploads', function () {
+    // Menampilkan halaman upload gambar
+    return view('dashboard/uploads');
+})->middleware(['auth', 'verified'])->name('dashboard/uploads');
+
+Route::get('/galeri', [GaleriController::class, 'index'])->name('galeri.index');
+Route::get('/galeri/create', [GaleriController::class, 'create'])->name('galeri.create');
+Route::post('/galeri', [GaleriController::class, 'store'])->name('galeri.store');
 
 // ** Route Resource untuk Student **
 Route::resource('student', StudentController::class);

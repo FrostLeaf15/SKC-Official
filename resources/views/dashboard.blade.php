@@ -20,13 +20,14 @@
     @endif --}}
 
     <!-- Main content -->
-    <section class="content">
+    <section class="content pt-3">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="card">
                         <!-- /.card-header -->
                         <div class="card-body">
+                            <h1 class="pb-3 text-center">List Siswa Daftar Online</h1>
                             <table id="example1" class="table table-bordered table-striped" style="white-space: nowrap;">
                                 <thead>
                                     <tr>

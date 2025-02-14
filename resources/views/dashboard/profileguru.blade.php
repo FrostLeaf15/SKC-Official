@@ -1,5 +1,7 @@
 @extends('layout.app')
 
+@section('title', 'Daftar Guru')
+
 @section('content')
     <div class="container mt-5" style="padding-top: 20px">
         <h2>Upload Foto Profil Guru</h2>

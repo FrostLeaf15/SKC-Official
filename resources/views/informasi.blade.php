@@ -158,7 +158,7 @@
                     </a>
                 </div>
             </div>
-            <div class="jurusan">
+            <div class="jurusan pb-2">
                 <h1 class="jdl">Informasi Jurusan</h1>
                 <div class="list-jurusan">
                     <a href="/informasi/askep">

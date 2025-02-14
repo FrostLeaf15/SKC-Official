@@ -68,6 +68,14 @@
                         </p>
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a href="/dashboard/daftarsiswa" class="nav-link">
+                        <i class="nav-icon fas fa-newspaper"></i>
+                        <p>
+                            Daftar Gel. 1
+                        </p>
+                    </a>
+                </li>
             </ul>        
         </nav>
         <!-- /.sidebar-menu -->
