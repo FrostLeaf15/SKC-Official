@@ -6,6 +6,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\GuruController;
 use App\Http\Controllers\StudentGel1Controller;
+use App\Http\Controllers\CollageController;
 use App\Models\Student;
 use App\Http\Controllers\GaleriController;
 use Illuminate\Support\Facades\Route;
@@ -132,6 +133,10 @@ Route::get('/pendaftaran', [PendaftaranController::class, 'index'])->name('penda
 
 Route::post('/pendaftaran', [PendaftaranController::class, 'store'])->name('pendaftaran.store');
 // Menyimpan data pendaftaran (proses POST)
+
+Route::get('/collage/create', [CollageController::class, 'create'])->name('collage.create');
+Route::post('/collage', [CollageController::class, 'store'])->name('collage.store');
+Route::get('/collage', [CollageController::class, 'index'])->name('collage.index');
 
 // ** Include Auth Routes **
 require __DIR__ . '/auth.php';

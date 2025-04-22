@@ -33,12 +33,6 @@ div.main div.galeri div.row div.post article div.post-img {
     align-items: center;
     margin-block: 1rem;
 }
-div.main div.galeri div.row div.post article img {
-    width: 500px;
-    height: 100%;
-    border-radius: 0.5rem;
-    margin-inline: center;
-}
 footer {
     background-color: #222;
     color: #fff;

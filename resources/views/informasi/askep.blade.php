@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
-                <img src="/pic/Guru/askep/guru_4.jpg" class="card-img-top" alt="Guru Askep">
+                <img src="/pic/Guru/askep/guru_4.png" class="card-img-top" alt="Guru Askep">
                 <div class="card-body text-center">
                     <p class="card-text" style="margin-bottom: 0px">Nama :</p>
                     <p class="card-text"><b>Afiifah Inaayah, S.Kep</b></p>
