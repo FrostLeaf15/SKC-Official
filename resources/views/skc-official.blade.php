@@ -37,15 +37,9 @@
 
             {{-- logo jurusan --}}
             <div class="logo-jurusan">
-                <a href="/informasi/askep">
-                    <img src="pic/LOGO_ASKEP.png" alt="Logo Jurusan">
-                </a>
-                <a href="/informasi/farmasi">
-                    <img src="pic/LOGO_FARMASI.png" alt="Logo Jurusan">
-                </a>
-                <a href="/informasi/tlm">
-                    <img src="pic/LOGO_TLM.png" alt="Logo Jurusan">
-                </a>
+                <img src="pic/LOGO_ASKEP.png" alt="Logo Jurusan">
+                <img src="pic/LOGO_FARMASI.png" alt="Logo Jurusan">
+                <img src="pic/LOGO_TLM.png" alt="Logo Jurusan">
             </div>
 
             {{-- pencarian --}}
