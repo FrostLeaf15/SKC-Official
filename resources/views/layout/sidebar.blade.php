@@ -14,7 +14,7 @@
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                {{-- <a href="profile" class="d-block">{{ auth()->user()->name }}</a> --}}
+                <a href="profile" class="d-block">{{ auth()->user()->name }}</a>
             </div>
         </div>
 
@@ -73,6 +73,14 @@
                         <i class="nav-icon fas fa-newspaper"></i>
                         <p>
                             Daftar Gel. 1
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="/dashboard/uploads" class="nav-link">
+                        <i class="nav-icon fas fa-images"></i>
+                        <p>
+                            Galeri
                         </p>
                     </a>
                 </li>

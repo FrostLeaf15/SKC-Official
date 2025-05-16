@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Galeri;
 use App\Models\User;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -14,6 +15,12 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // User::factory(10)->create();
+
+        $this->call([
+            GaleriSeeder::class,
+            // Tambahkan seeder lain yang ingin dijalankan
+        ]);
+        // Buat user default
 
         User::factory()->create([
             'name' => 'Test User',

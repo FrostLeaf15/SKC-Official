@@ -10,7 +10,7 @@ class Student extends Model
     use HasFactory;
 
     // Jika nama tabel tidak mengikuti konvensi penamaan Laravel (misalnya 'students')
-    protected $table = 'students';
+    protected $table = 'student';
 
     // Tentukan kolom yang bisa diisi
     protected $fillable = [

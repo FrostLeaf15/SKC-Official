@@ -35,12 +35,14 @@ class GaleriController extends Controller
             'deskripsi' => 'required',
         ]);
 
-        $path = $request->file('gambar')->store('uploads', 'public');
+        $path = $request->file('gambar')->store('galeri', 'public');
 
         // dd($request->all());
         Galeri::create([
             'gambar' => $path,
             'deskripsi' => $request->deskripsi,
+            'created_at' => now(),
+            'updated_at' => now(),
         ]);
 
         return redirect()->route('galeri.index')
