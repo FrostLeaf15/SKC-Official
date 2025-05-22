@@ -61,18 +61,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dashboard/guru" class="nav-link">
+                    <a href="/dashboard/profile" class="nav-link">
                         <i class="nav-icon fas fa-user-circle"></i>
                         <p>
                             Profile
-                        </p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="/dashboard/daftarsiswa" class="nav-link">
-                        <i class="nav-icon fas fa-newspaper"></i>
-                        <p>
-                            Daftar Gel. 1
                         </p>
                     </a>
                 </li>
@@ -84,7 +76,30 @@
                         </p>
                     </a>
                 </li>
-            </ul>        
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-database"></i>
+                        <p>
+                            Data Siswa Baru
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/dashboard/gelombangsatu" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Gelombang 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/dashboard/gelombangdua" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Gelombang 2</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <!-- /.sidebar-menu -->
     </div>

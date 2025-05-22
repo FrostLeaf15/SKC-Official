@@ -4,12 +4,11 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\{
     DashboardController,
     GaleriController,
-    GuruController,
     PendaftaranController,
     ProfileController,
     StudentController,
-    StudentGel1Controller,
-    CollageController
+    GelombangSatuController,
+    GelombangDuaController,
 };
 
 // ====================
@@ -50,12 +49,17 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('/dashboard/profileguru', 'dashboard.profileguru')->name('dashboard.profileguru');
     Route::view('/dashboard/uploads', 'dashboard.uploads')->name('dashboard.uploads');
 
-    // Guru
-    Route::get('/dashboard/guru', [GuruController::class, 'index'])->name('guru.index');
-    Route::post('/dashboard/guru', [GuruController::class, 'store'])->name('guru.store');
+    // ====================
+    // ROUTE GELOMBANG SATU
+    // ====================
+    Route::resource('gelombangsatu', GelombangSatuController::class)->except(['show']);
+    Route::get('/dashboard/gelombangsatu', [GelombangSatuController::class, 'index'])->name('dashboard.gelombangsatu');
 
-    // Siswa gelombang 1
-    Route::get('/dashboard/daftarsiswa', [StudentGel1Controller::class, 'index']);
+    // ====================
+    // ROUTE GELOMBANG DUA
+    // ====================
+    Route::resource('gelombangdua', GelombangDuaController::class)->except(['show']);
+    Route::get('/dashboard/gelombangdua', [GelombangDuaController::class, 'index'])->name('dashboard.gelombangdua');
 });
 
 // ====================
@@ -88,13 +92,6 @@ Route::get('/payment', [StudentController::class, 'showPayment'])->name('payment
 // ====================
 Route::get('/pendaftaran', [PendaftaranController::class, 'index'])->name('pendaftaran.index');
 Route::post('/pendaftaran', [PendaftaranController::class, 'store'])->name('pendaftaran.store');
-
-// ====================
-// ROUTE COLLAGE
-// ====================
-Route::get('/collage/create', [CollageController::class, 'create'])->name('collage.create');
-Route::post('/collage', [CollageController::class, 'store'])->name('collage.store');
-Route::get('/collage', [CollageController::class, 'index'])->name('collage.index');
 
 // ====================
 // ROUTE AUTENTIKASI
