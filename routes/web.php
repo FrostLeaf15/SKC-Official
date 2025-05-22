@@ -26,19 +26,19 @@ Route::view('/ppdb', 'ppdb');
 Route::view('/informasi/askep', 'informasi.askep', [
     'namajurusan' => 'Asisten Keperawatan',
     'logo' => 'LOGO_ASKEP.png',
-    'kompetensi' => 'Asisten Keperawatan merupakan... (ringkas atau tetapkan sesuai kebutuhan)'
+    'kompetensi' => 'Asisten Keperawatan merupakan suatu kompetensi keahlian yang menghasilkan tenaga ahli di bidang kesehatan dalam asistensi keperawatan yang terampil dan kompeten, khususnya pemenuhan kebutuhan dasar manusia merawat kesehatan mental dan fisik.'
 ]);
 
 Route::view('/informasi/farmasi', 'informasi.farmasi', [
     'namajurusan' => 'Farmasi Klinis dan Komunitas',
     'logo' => 'LOGO_FARMASI.png',
-    'kompetensi' => 'Farmasi merupakan kompetensi...'
+    'kompetensi' => 'Farmasi merupakan kompetensi keahlian yang mempelajari segala hal tentang obat. Mulai dari bahan kimia yang ada didalamnya, proses pembuatan obat, proses pengemasan obat, fungsi dan kegunaan obat, sampai cara distribusi dan pengelolaan stok obat.'
 ]);
 
 Route::view('/informasi/tlm', 'informasi.tlm', [
     'namajurusan' => 'Teknologi Laboratorium Medik',
     'logo' => 'LOGO_TLM.png',
-    'kompetensi' => 'Teknologi Laboratorium Medik merupakan...'
+    'kompetensi' => 'Teknologi Laboratorium Medik merupakan kompetensi keahlian yang akan berkecimpung di dunia kesehatan untuk melaksanakan pelayanan pemeriksaan, pengukuran, penetapan dan pengujian terhadap bahan yang berasal dari manusia untuk penentuan jenis penyakit dan penyebab penyakit. Keunggulan dari kompetensi keahlian Teknologi Laboratorium Medik yaitu dalam penyerapan lulusan. Lulusan Teknologi Laboratorium Medik SMK Kesehatan Cianjur akan sangat mudah mendapatkan pekerjaan, mengingat masih kurangnnya SDM dibidang Teknologi Laboratorium Medik/Analis Kesehatan.'
 ]);
 
 // ====================
