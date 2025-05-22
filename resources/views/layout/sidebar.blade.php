@@ -14,7 +14,7 @@
                 <img src="../../dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                {{-- <a href="profile" class="d-block">{{ auth()->user()->name }}</a> --}}
+                <a href="profile" class="d-block">{{ auth()->user()->name }}</a>
             </div>
         </div>
 
@@ -61,7 +61,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dashboard/guru" class="nav-link">
+                    <a href="/dashboard/profile" class="nav-link">
                         <i class="nav-icon fas fa-user-circle"></i>
                         <p>
                             Profile
@@ -69,14 +69,37 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/dashboard/daftarsiswa" class="nav-link">
-                        <i class="nav-icon fas fa-newspaper"></i>
+                    <a href="/dashboard/uploads" class="nav-link">
+                        <i class="nav-icon fas fa-images"></i>
                         <p>
-                            Daftar Gel. 1
+                            Galeri
                         </p>
                     </a>
                 </li>
-            </ul>        
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-database"></i>
+                        <p>
+                            Data Siswa Baru
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="/dashboard/gelombangsatu" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Gelombang 1</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/dashboard/gelombangdua" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Gelombang 2</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </nav>
         <!-- /.sidebar-menu -->
     </div>

@@ -33,22 +33,22 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($student_gel1s as $student_gel1)
+                                    @foreach ($gelombangdua as $items)
                                         <tr>
                                             <td>{{ $loop->iteration }}</td> <!-- Nomor Urut -->
-                                            <td>{{ $student_gel1->nama }}</td>
-                                            <td>{{ $student_gel1->jurusan }}</td>
-                                            <td>{{ $student_gel1->jurusan_2 }}</td>
-                                            <td>{{ $student_gel1->nisn }}</td>
-                                            <td>{{ $student_gel1->tempat_lahir }}</td>
-                                            <td>{{ $student_gel1->tanggal_lahir }}</td>
-                                            <td>{{ $student_gel1->alamat }}</td>
-                                            <td>{{ $student_gel1->kelamin }}</td>
-                                            <td>{{ $student_gel1->sekolahAsal }}</td>
-                                            <td>{{ $student_gel1->nmorngtuawali }}</td>
-                                            <td>{{ $student_gel1->nmrkonfirmasi }}</td>
-                                            <td>{{ $student_gel1->rekomendasi }}</td>
-                                            <td>{{ $student_gel1->created_at }}</td>
+                                            <td>{{ $items->nama }}</td>
+                                            <td>{{ $items->jurusan }}</td>
+                                            <td>{{ $items->jurusan_2 }}</td>
+                                            <td>{{ $items->nisn }}</td>
+                                            <td>{{ $items->tempat_lahir }}</td>
+                                            <td>{{ $items->tanggal_lahir }}</td>
+                                            <td>{{ $items->alamat }}</td>
+                                            <td>{{ $items->kelamin }}</td>
+                                            <td>{{ $items->sekolahAsal }}</td>
+                                            <td>{{ $items->nmorngtuawali }}</td>
+                                            <td>{{ $items->nmrkonfirmasi }}</td>
+                                            <td>{{ $items->rekomendasi }}</td>
+                                            <td>{{ $items->created_at }}</td>
                                         </tr>
                                     @endforeach
                                 </tbody>
