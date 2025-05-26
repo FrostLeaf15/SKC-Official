@@ -115,13 +115,16 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="/pic/kegiatan/tlm/kegiatan.png" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan.png" class="d-block w-100"
+                            alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                     <div class="carousel-item">
-                        <img src="/pic/kegiatan/tlm/kegiatan2.jpg" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan2.jpg" class="d-block w-100"
+                            alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                     <div class="carousel-item">
-                        <img src="/pic/kegiatan/tlm/kegiatan3.jpg" class="d-block w-100" alt="...">
+                        <img src="/pic/kegiatan/tlm/kegiatan3.jpg" class="d-block w-100"
+                            alt="Kegiatan Teknologi Laboratorium Medis">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -143,50 +146,33 @@
     <div class="testimoni mt-5">
         <h3>Testimoni Alumni</h3>
         <div class="list-testimoni mt-3">
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="/pic/Guru/alumni/alumnitlm1.jpg" class="img-fluid rounded" alt="Photo Alumni TLM">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo dicta
-                                perspiciatis laborum iure eum amet ea atque, quae provident iusto.</p>
+                            <h5 class="card-title">Yogi Syahrul Ramdani</h5>
+                            <p class="card-text">Bekerja :<br>Klinik Cagak (Kepala Laboratorium)</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start" alt="...">
+                        <img src="/pic/Guru/alumni/alumnitlm2.jpg" class="img-fluid rounded" alt="Photo Alumni TLM">
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">Card Title</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit amet,
-                                beatae et expedita odit blanditiis quae cum rem nihil. Esse!</p>
+                            <h5 class="card-title">Naylah Nur Khalisah</h5>
+                            <p class="card-text">Bekerja :<br>Rumah Sakit Umum Daerah (RSUD) Sayang Cianjur</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-3" style="max-width: 540px;">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start"
-                            alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="card mb-3" style="max-width: 540px;">
+            {{-- <div class="card mb-3 container-fluid" style="max-width: 540px;">
                 <div class="row g-0">
                     <div class="col-md-4">
                         <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start"
@@ -201,6 +187,21 @@
                     </div>
                 </div>
             </div>
+            <div class="card mb-3 container-fluid" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://dummyimage.com/1000X700/000/fff.png" class="img-fluid rounded-start"
+                            alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div> --}}
         </div>
     </div>
     {{-- Testimoni Alumni end --}}

@@ -125,6 +125,8 @@ footer {
 @media (max-width:768px) {
 
     .profile-guru,
+    .profile-guru-f,
+    .profile-guru-t,
     .seragam-sekolah {
         display: flex;
         gap: 10px;
@@ -134,6 +136,8 @@ footer {
     }
 
     .profile-guru .card,
+    .profile-guru-f .card,
+    .profile-guru-t .card,
     .seragam-sekolah .card {
         flex: 0 0 auto;
         scroll-snap-align: start;
