@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="{{ asset('/pic/favicon.png') }}">
 
     {{-- CSS Style --}}
     <link rel="stylesheet" href="{{ asset('css/galerystyle.css') }}">
@@ -23,50 +24,6 @@
         <div class="judul text-center py-4 bg-primary text-white">
             <h1>GALERI</h1>
         </div>
-
-        {{-- <div class="container">
-            <!-- Filter Galeri -->
-            <div class="card mb-4">
-                <div class="card-body">
-                    <h5 class="card-title">Filter Galeri</h5>
-                    <form id="filterForm" class="row g-3">
-                        <div class="col-md-4">
-                            <label for="bulan" class="form-label">Bulan</label>
-                            <select class="form-select" id="bulan" required>
-                                <option value="" disabled selected>Pilih Bulan</option>
-                                <option value="01">Januari</option>
-                                <option value="02">Februari</option>
-                                <option value="03">Maret</option>
-                                <option value="04">April</option>
-                                <option value="05">Mei</option>
-                                <option value="06">Juni</option>
-                                <option value="07">Juli</option>
-                                <option value="08">Agustus</option>
-                                <option value="09">September</option>
-                                <option value="10">Oktober</option>
-                                <option value="11">November</option>
-                                <option value="12">Desember</option>
-                            </select>
-                        </div>
-                        <div class="col-md-4">
-                            <label for="tahun" class="form-label">Tahun</label>
-                            <select class="form-select" id="tahun" required>
-                                <option value="" disabled selected>Pilih Tahun</option>
-                                <script>
-                                    const currentYear = new Date().getFullYear();
-                                    for (let i = currentYear; i >= 2020; i--) {
-                                        document.write(`<option value="${i}">${i}</option>`);
-                                    }
-                                </script>
-                            </select>
-                        </div>
-                        <div class="col-md-4 d-flex align-items-end">
-                            <button type="submit" class="btn btn-primary w-100">Tampilkan</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div> --}}
 
         <div class="container my-5">
             @if (session('success'))

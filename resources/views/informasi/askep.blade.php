@@ -116,7 +116,7 @@
         <h3>Kegiatan</h3>
         <div class="gambar text-center">
             <div id="carouselExampleIndicators"
-                class="carousel slide carousel object-fit-sm-contain border rounded custom-carousel">
+                class="carousel slide carousel-fade object-fit-sm-contain border rounded custom-carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -134,8 +134,6 @@
                         aria-label="Slide 7"></button>
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"
                         aria-label="Slide 8"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"
-                        aria-label="Slide 9"></button>
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -168,10 +166,6 @@
                     </div>
                     <div class="carousel-item">
                         <img src="/pic/kegiatan/askep/kegiatan8.jpg" class="d-block w-100 max-height-500"
-                            style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="/pic/kegiatan/askep/kegiatan9.jpg" class="d-block w-100 max-height-500"
                             style="height: 500px; object-fit: cover;" alt="Kegiatan Askep">
                     </div>
                 </div>
