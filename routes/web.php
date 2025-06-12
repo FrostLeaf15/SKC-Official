@@ -19,6 +19,7 @@ Route::view('/about', 'welcome');
 Route::view('/galeri', 'galeri')->name('galeri.index');
 Route::view('/informasi', 'informasi', ['title' => 'informasi']);
 Route::view('/ppdb', 'ppdb');
+Route::view('/error', 'maintenance');
 
 // ====================
 // ROUTE INFORMASI JURUSAN
