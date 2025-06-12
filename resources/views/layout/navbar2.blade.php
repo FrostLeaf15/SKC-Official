@@ -24,7 +24,7 @@
                     <a class="nav-link active" href="/galeri">Galeri</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Sejarah</a>
+                    <a class="nav-link active" href="/error">Profil</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="/informasi">Formulir PPDB</a>
