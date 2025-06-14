@@ -37,9 +37,15 @@
 
             {{-- logo jurusan --}}
             <div class="logo-jurusan">
-                <img src="pic/LOGO_ASKEP.png" alt="Logo Jurusan">
-                <img src="pic/LOGO_FARMASI.png" alt="Logo Jurusan">
-                <img src="pic/LOGO_TLM.png" alt="Logo Jurusan">
+                <a href="https://smkkesehatancianjur.sch.id/informasi/askep">
+                    <img src="pic/LOGO_ASKEP.png" alt="Logo Jurusan">
+                </a>
+                <a href="https://smkkesehatancianjur.sch.id/informasi/farmasi">
+                    <img src="pic/LOGO_FARMASI.png" alt="Logo Jurusan">
+                </a>
+                <a href="https://smkkesehatancianjur.sch.id/informasi/tlm">
+                    <img src="pic/LOGO_TLM.png" alt="Logo Jurusan">
+                </a>
             </div>
 
             {{-- pencarian --}}

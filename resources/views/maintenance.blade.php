@@ -37,7 +37,7 @@
                 </div>
             </div>
 
-            <img src="/pic/error.svg" alt="">
+            <img src="/pic/svg/error.svg" alt="">
         </div>
     </section>
 </body>
